@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advoard – Indoor Mobile Robots</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1921f4b969.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="logo">
+          <svg
+            class="header-bg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="209.414"
+            height="86.94"
+            viewBox="0 0 209.414 86.94"
+          >
+            <path
+              id="Path_1051"
+              data-name="Path 1051"
+              d="M340.076,204.18H149.488V117.24H358.9v68.234Z"
+              transform="translate(-149.488 -117.24)"
+              fill="#fff"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="124.682"
+            height="40.56"
+            viewBox="0 0 124.682 40.56"
+          >
+            <path
+              id="Path_1491"
+              data-name="Path 1491"
+              d="M1879.6,35.553l-5.469,14.832h2.246l1.117-3.253h5.986l1.118,3.253h2.244l-5.467-14.832Zm-1.426,9.6,2.313-6.732,2.313,6.732Zm18.667-8.976a6.85,6.85,0,0,0-3.051-.623h-4.7V50.385h4.693a6.885,6.885,0,0,0,3.055-.622,4.332,4.332,0,0,0,1.933-1.815,5.847,5.847,0,0,0,.664-2.878v-4.2a5.833,5.833,0,0,0-.664-2.875A4.313,4.313,0,0,0,1896.841,36.176Zm.46,8.976a3.144,3.144,0,0,1-.9,2.4,3.57,3.57,0,0,1-2.546.851h-2.682V37.531h2.682a3.566,3.566,0,0,1,2.546.852,3.145,3.145,0,0,1,.9,2.4Zm13.354-9.6h2.265l-4.835,14.832h-1.98l-4.836-14.832h2.266l3.56,11.629Zm52.6,11.517h5.986l1.118,3.254h2.244l-5.467-14.832h-1.775l-5.469,14.832h2.246Zm2.992-8.711,2.314,6.732h-4.626Zm10.684,5.691h3.1l3.165,6.274h2.469l-3.421-6.491a4.2,4.2,0,0,0,.742-.313,3.75,3.75,0,0,0,1.515-1.5,4.969,4.969,0,0,0,.005-4.5,3.723,3.723,0,0,0-1.509-1.506,4.659,4.659,0,0,0-2.26-.53h-5.885V50.324h2.081Zm3.885-6.591a1.939,1.939,0,0,1,1.057.286,1.889,1.889,0,0,1,.7.813,3.046,3.046,0,0,1,0,2.417,1.871,1.871,0,0,1-.71.811,1.949,1.949,0,0,1-1.051.284h-3.885V37.459Zm17.334.471a4.322,4.322,0,0,0-1.928-1.816,6.864,6.864,0,0,0-3.051-.622h-4.7V50.324h4.693a6.884,6.884,0,0,0,3.055-.622,4.332,4.332,0,0,0,1.933-1.815,5.851,5.851,0,0,0,.664-2.878v-4.2A5.834,5.834,0,0,0,1998.149,37.93Zm-1.468,7.161a3.144,3.144,0,0,1-.9,2.4,3.57,3.57,0,0,1-2.546.85h-2.682V37.47h2.682a3.566,3.566,0,0,1,2.546.852,3.143,3.143,0,0,1,.9,2.4Zm-60.209-22.438a20.28,20.28,0,1,0,20.28,20.28A20.3,20.3,0,0,0,1936.472,22.653Zm0,36.929a16.649,16.649,0,1,1,16.649-16.649A16.668,16.668,0,0,1,1936.472,59.582Zm0-24.766a8.117,8.117,0,1,0,8.117,8.117A8.126,8.126,0,0,0,1936.472,34.816Zm0,14.78a6.663,6.663,0,1,1,6.663-6.663A6.671,6.671,0,0,1,1936.472,49.6Zm27.96,8.22a1.307,1.307,0,0,0-.217-.679.844.844,0,0,0-.53-.247,1.2,1.2,0,0,0,.639-.437,1.338,1.338,0,0,0,.2-.774,1.153,1.153,0,0,0-.438-.983,2.162,2.162,0,0,0-1.306-.329h-2.335v4.872h.487V57.147h2.049a1.213,1.213,0,0,1,.689.153.709.709,0,0,1,.262.516c.011.092.026.3.046.641a3.2,3.2,0,0,0,.123.782h.566a2.027,2.027,0,0,1-.192-.9C1964.462,58.115,1964.447,57.942,1964.432,57.816Zm-1.706-1.127h-1.792V54.823h1.732a1.953,1.953,0,0,1,1.064.212.808.808,0,0,1,.306.716.826.826,0,0,1-.306.719A1.767,1.767,0,0,1,1962.726,56.689Zm5.148-2.449a2.371,2.371,0,1,0,1.875.686A2.53,2.53,0,0,0,1967.874,54.24Zm1.513,4.1a2.341,2.341,0,0,1-3.029,0,2.422,2.422,0,0,1,0-3.071,2.341,2.341,0,0,1,3.029,0,2.422,2.422,0,0,1,0,3.071Zm5.094-1.67a1.232,1.232,0,0,0,.573-.418,1.259,1.259,0,0,0-.2-1.575,1.8,1.8,0,0,0-1.142-.311h-2.367v4.872h2.36a2.019,2.019,0,0,0,1.3-.346,1.306,1.306,0,0,0,.42-1.071,1.171,1.171,0,0,0-.242-.766A1.145,1.145,0,0,0,1974.481,56.671Zm-2.641-1.855h1.772a1.5,1.5,0,0,1,.869.193.877.877,0,0,1-.006,1.26,1.637,1.637,0,0,1-.91.19h-1.725Zm2.784,3.728a1.707,1.707,0,0,1-.963.21h-1.821V56.9h1.926a1.354,1.354,0,0,1,.879.233.911.911,0,0,1,.277.739A.767.767,0,0,1,1974.624,58.544Zm4.044-4.3a2.371,2.371,0,1,0,1.875.686A2.533,2.533,0,0,0,1978.668,54.24Zm1.513,4.1a2.342,2.342,0,0,1-3.03,0,2.425,2.425,0,0,1,0-3.071,2.342,2.342,0,0,1,3.03,0,2.425,2.425,0,0,1,0,3.071Zm1.4-3.974h4.249v.449h-1.88v4.423h-.489V54.816h-1.88Zm4.869,0h.487v4.872h-.487Zm5.809,3.044h.518a2.316,2.316,0,0,1-.822,1.429,2.468,2.468,0,0,1-1.607.527,2.376,2.376,0,0,1-1.795-.7,2.573,2.573,0,0,1-.673-1.865,2.363,2.363,0,0,1,2.559-2.564,2.469,2.469,0,0,1,1.54.458,1.856,1.856,0,0,1,.718,1.263h-.494a1.505,1.505,0,0,0-.6-.923,1.985,1.985,0,0,0-1.169-.324,2.022,2.022,0,0,0-1.509.558,2.088,2.088,0,0,0-.548,1.532,2.126,2.126,0,0,0,.532,1.519,1.867,1.867,0,0,0,1.429.566,1.989,1.989,0,0,0,1.256-.4A1.8,1.8,0,0,0,1992.257,57.411Zm4.893-.378a1.11,1.11,0,0,1,.307.836,1.307,1.307,0,0,1-.521,1.1,2.354,2.354,0,0,1-1.453.4,2.389,2.389,0,0,1-1.529-.443,1.473,1.473,0,0,1-.556-1.216v-.073h.49v.026a1.089,1.089,0,0,0,.422.894,1.753,1.753,0,0,0,1.122.334,1.974,1.974,0,0,0,1.1-.271.835.835,0,0,0,.409-.729.623.623,0,0,0-.237-.529,2.587,2.587,0,0,0-.979-.315l-1.037-.181a1.505,1.505,0,0,1-.867-.4,1.137,1.137,0,0,1-.286-.814,1.227,1.227,0,0,1,.5-1.024,2.6,2.6,0,0,1,2.741.013,1.383,1.383,0,0,1,.531,1.1h-.489a1.032,1.032,0,0,0-.407-.782,1.652,1.652,0,0,0-1.008-.27,1.754,1.754,0,0,0-1,.252.788.788,0,0,0-.367.684.607.607,0,0,0,.255.525,2.538,2.538,0,0,0,.959.3l.925.163A1.832,1.832,0,0,1,1997.15,57.033Z"
+              transform="translate(-1874.131 -22.653)"
+            />
+          </svg>
+        </div>
+        <div class="nav">
+          <ul class="nav-list">
+            <li class="menu-item" id="menu-first">
+              <svg
+                class="header-bg-first"
+                xmlns="http://www.w3.org/2000/svg"
+                width="151.982"
+                height="42.336"
+                viewBox="0 0 151.982 42.336"
+              >
+                <rect
+                  id="Rectangle_84"
+                  data-name="Rectangle 84"
+                  width="151.982"
+                  height="42.336"
+                  fill="#fff"
+                />
+              </svg>
+              <a class="menu-item-name" href="#">Ürünlerimiz</a>
+              <div class="sub-menu">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="151.982"
+                  height="90.36"
+                  viewBox="0 0 151.982 90.36"
+                >
+                  <path
+                    id="Path_546"
+                    data-name="Path 546"
+                    d="M2074.309,236.66l-12.372,12.665h-139.61v-90.36h151.982Z"
+                    transform="translate(-1922.327 -158.965)"
+                    fill="#fff"
+                  />
+                </svg>
+                <ul>
+                  <li><a href="#">AdvoBot </a></li>
+                  <li><a href="#">Eldor</a></li>
+                  <li><a href="#">Transpalet</a></li>
+                </ul>
+              </div>
+            </li>
+            <li id="menu-second" class="menu-item">
+              <svg
+                class="header-bg-second"
+                xmlns="http://www.w3.org/2000/svg"
+                width="151.982"
+                height="42.336"
+                viewBox="0 0 151.982 42.336"
+              >
+                <rect
+                  id="Rectangle_82"
+                  data-name="Rectangle 82"
+                  width="151.982"
+                  height="42.336"
+                  fill="#fff"
+                />
+              </svg>
+              <a class="menu-item-name" href="#">Hakkımızda</a>
+              <div class="sub-menu-second">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="171.982"
+                  height="70.36"
+                  viewBox="0 0 171.982 70.36"
+                >
+                  <path
+                    id="Path_550"
+                    data-name="Path 550"
+                    d="M2247.039,711.294l-12.372,12.665h-159.61V653.6h171.982Z"
+                    transform="translate(-2075.057 -653.599)"
+                    fill="#fff"
+                  />
+                </svg>
+                <ul>
+                  <li><a href="#">Hakkımızda </a></li>
+                  <li><a href="#">Medyada Advoard</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <svg
+                class="header-bg-third"
+                xmlns="http://www.w3.org/2000/svg"
+                width="113.53"
+                height="42.336"
+                viewBox="0 0 113.53 42.336"
+              >
+                <path
+                  id="Path_1052"
+                  data-name="Path 1052"
+                  d="M765.756,159.576H662.866V117.24H776.4V149Z"
+                  transform="translate(-662.866 -117.24)"
+                  fill="#fff"
+                /></svg
+              ><a class="menu-item-name" href="#">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="lang-btn-wrapper">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26.77"
+          height="24.86"
+          viewBox="0 0 26.77 24.86"
+        >
+          <path
+            id="Path_1020"
+            data-name="Path 1020"
+            d="M3013.546,31.109l-12.965,8.371-12.965-8.371V15.54h25.93Z"
+            transform="translate(-2987.196 -15.12)"
+            fill="none"
+            stroke="#fff"
+            stroke-miterlimit="10"
+            stroke-width="0.84"
+          />
+        </svg>
+        <a href="#" class="lang-btn"> EN </a>
+      </div>
+      <div id="burger" class="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15.448"
+          height="12.65"
+          viewBox="0 0 15.448 12.65"
+        >
+          <g id="Group_108" data-name="Group 108" transform="translate(-453.986 -10.547)">
+            <rect
+              id="Rectangle_39"
+              data-name="Rectangle 39"
+              width="15.448"
+              height="2.141"
+              transform="translate(453.986 10.547)"
+              fill="#fff"
+            />
+            <rect
+              id="Rectangle_40"
+              data-name="Rectangle 40"
+              width="15.448"
+              height="2.141"
+              transform="translate(453.986 15.801)"
+              fill="#fff"
+            />
+            <rect
+              id="Rectangle_41"
+              data-name="Rectangle 41"
+              width="15.448"
+              height="2.141"
+              transform="translate(453.986 21.056)"
+              fill="#fff"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="nav--slide" id="mySidenav">
+        <div class="brawler-menu-content">
+          <a class="close-btn" id="close" href="javascript:void(0)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12.438"
+              height="12.437"
+              viewBox="0 0 12.438 12.437"
+            >
+              <g id="Group_19" data-name="Group 19" transform="translate(-996.287 -10.653)">
+                <rect
+                  id="Rectangle_12"
+                  data-name="Rectangle 12"
+                  width="15.448"
+                  height="2.141"
+                  transform="translate(997.802 10.653) rotate(45)"
+                />
+                <rect
+                  id="Rectangle_13"
+                  data-name="Rectangle 13"
+                  width="15.448"
+                  height="2.141"
+                  transform="translate(996.287 21.576) rotate(-44.995)"
+                />
+              </g>
+            </svg>
+          </a>
+          <div class="menu-content-drawer">
+            <div class="brawler-line">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="99.851"
+                height="2.041"
+                viewBox="0 0 99.851 2.041"
+              >
+                <line
+                  id="Line_11"
+                  data-name="Line 11"
+                  x2="99.851"
+                  transform="translate(0 1.021)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="2.041"
+                ></line>
+              </svg>
+            </div>
+
+            <ul>
+              <h1>ÜRÜNLERİMİZ</h1>
+              <li>AdvoBot</li>
+              <li>Eldor</li>
+              <li>Transpalet</li>
+            </ul>
+
+            <div class="brawler-line">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="99.851"
+                height="2.041"
+                viewBox="0 0 99.851 2.041"
+              >
+                <line
+                  id="Line_11"
+                  data-name="Line 11"
+                  x2="99.851"
+                  transform="translate(0 1.021)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="2.041"
+                ></line>
+              </svg>
+            </div>
+
+            <ul>
+              <h1>ŞİRKET</h1>
+              <li>Anasayfa</li>
+              <li>Hakkımızda</li>
+              <li>Basında Biz</li>
+            </ul>
+
+            <div class="brawler-line">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="99.851"
+                height="2.041"
+                viewBox="0 0 99.851 2.041"
+              >
+                <line
+                  id="Line_11"
+                  data-name="Line 11"
+                  x2="99.851"
+                  transform="translate(0 1.021)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="2.041"
+                ></line>
+              </svg>
+            </div>
+
+            <ul>
+              <h1>İLETİŞİM</h1>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="homepage-video-section">
+        <video playsinline="" autoplay="" muted="" loop="" preload="auto">
+          <source src="img/homepage.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="text-area">
+          <div class="text-area-wrapper">
+            <h2>KAT KAT VERİMLİ</h2>
+            <h1>Robotik güç birliğiyle yarının lojistiği</h1>
+            <p>
+              Otonom Filo Robot iş birliğiyle süreci hızlandırıp 3 kata kadar verimlilik sağlayın.
+              Şirketinizi geleceğe taşıyın.
+            </p>
+            <div class="btn-wrapper">
+              <a href="#"> İncele</a>
+              <svg
+                class="btn-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="96.668"
+                height="38.834"
+                viewBox="0 0 96.668 38.834"
+              >
+                <path
+                  id="Path_526"
+                  data-name="Path 526"
+                  d="M857.883,471.21l-7.56,7.56H762.249v-37.8h95.634Z"
+                  transform="translate(-761.732 -440.453)"
+                  fill="transparent"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="1.034"
+                ></path>
+              </svg>
+            </div>
+            <svg
+              class="first"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18.395"
+              height="18.395"
+              viewBox="0 0 12.395 12.395"
+            >
+              <g id="Group_9" data-name="Group 9" transform="translate(-633.688 -405.054)">
+                <line
+                  id="Line_5"
+                  data-name="Line 5"
+                  y2="12.395"
+                  transform="translate(639.885 405.054)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="1.549"
+                />
+                <line
+                  id="Line_6"
+                  data-name="Line 6"
+                  x2="12.395"
+                  transform="translate(633.688 411.251)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="1.549"
+                />
+              </g>
+            </svg>
+            <svg
+              class="second"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18.395"
+              height="18.395"
+              viewBox="0 0 12.395 12.395"
+            >
+              <g id="Group_9" data-name="Group 9" transform="translate(-633.688 -405.054)">
+                <line
+                  id="Line_5"
+                  data-name="Line 5"
+                  y2="12.395"
+                  transform="translate(639.885 405.054)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="1.549"
+                />
+                <line
+                  id="Line_6"
+                  data-name="Line 6"
+                  x2="12.395"
+                  transform="translate(633.688 411.251)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="1.549"
+                />
+              </g>
+            </svg>
+            <svg
+              class="third"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18.395"
+              height="18.395"
+              viewBox="0 0 12.395 12.395"
+            >
+              <g id="Group_9" data-name="Group 9" transform="translate(-633.688 -405.054)">
+                <line
+                  id="Line_5"
+                  data-name="Line 5"
+                  y2="12.395"
+                  transform="translate(639.885 405.054)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="1.549"
+                />
+                <line
+                  id="Line_6"
+                  data-name="Line 6"
+                  x2="12.395"
+                  transform="translate(633.688 411.251)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="1.549"
+                />
+              </g>
+            </svg>
+            <svg
+              class="fourth"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18.395"
+              height="18.395"
+              viewBox="0 0 12.395 12.395"
+            >
+              <g id="Group_9" data-name="Group 9" transform="translate(-633.688 -405.054)">
+                <line
+                  id="Line_5"
+                  data-name="Line 5"
+                  y2="12.395"
+                  transform="translate(639.885 405.054)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="1.549"
+                />
+                <line
+                  id="Line_6"
+                  data-name="Line 6"
+                  x2="12.395"
+                  transform="translate(633.688 411.251)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="1.549"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="page-cont">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="38.334"
+            height="34.749"
+            viewBox="0 0 38.334 34.749"
+          >
+            <g id="Group_299" data-name="Group 299" transform="translate(-2495.055 -619.176)">
+              <g id="Group_297" data-name="Group 297">
+                <g id="Group_296" data-name="Group 296">
+                  <path
+                    id="Path_1492"
+                    data-name="Path 1492"
+                    d="M2528.126,652.78h4.118v-4.869"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="2.291"
+                  />
+                  <path
+                    id="Path_1493"
+                    data-name="Path 1493"
+                    d="M2500.318,652.78H2496.2v-4.869"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="2.291"
+                  />
+                  <path
+                    id="Path_1494"
+                    data-name="Path 1494"
+                    d="M2528.126,620.321h4.118v4.869"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="2.291"
+                  />
+                  <path
+                    id="Path_1495"
+                    data-name="Path 1495"
+                    d="M2500.318,620.321H2496.2v4.869"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-miterlimit="10"
+                    stroke-width="2.291"
+                  />
+                </g>
+              </g>
+              <g id="Group_298" data-name="Group 298">
+                <line
+                  id="Line_1185"
+                  data-name="Line 1185"
+                  y1="18.358"
+                  transform="translate(2514.222 625.468)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="3.101"
+                />
+                <path
+                  id="Path_1496"
+                  data-name="Path 1496"
+                  d="M2522.754,638.874l-2.327-2.327-6.2,6.2-6.2-6.2-2.327,2.327,8.531,8.532Z"
+                  fill="#fff"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="video-section-bottom">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="380.462"
+            height="33.776"
+            viewBox="0 0 380.462 33.776"
+          >
+            <path
+              id="Path_1018"
+              data-name="Path 1018"
+              d="M2672.577,641.584h364.587V675.36H2656.7V652.244Z"
+              transform="translate(-2656.703 -641.584)"
+              fill="#fff"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="134.756"
+            height="35.082"
+            viewBox="0 0 134.756 35.082"
+          >
+            <path
+              id="Path_1036"
+              data-name="Path 1036"
+              d="M356.357,822.14H480v35.082H345.244v-24.01Z"
+              transform="translate(-345.244 -822.14)"
+              fill="#fff"
+            />
+          </svg>
+        </div>
+      </section>
+      <section class="second-section">
+        <div class="container-sm">
+          <div class="information-wrapper">
+            <div data-aos="fade-right" data-aos-delay="100" class="item">
+              <div class="item-wrapper">
+                <div class="img-area">
+                  <img src="img/Adv1.gif" alt="" />
+                  <div class="second-img">
+                    <img src="img/Adv1a.gif" alt="" />
+                  </div>
+                </div>
+                <div class="text-area">
+                  <h3>OTONOM FİLO YÖNETİMİ</h3>
+                  <p>
+                    Birbirlerinden haberdar, iş birlikli olarak hareket eden tam otonom mobil
+                    robotlar ve yazılımları...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="100" class="item">
+              <div class="item-wrapper">
+                <div class="img-area">
+                  <img src="img/Adv2.gif" alt="" />
+                  <div class="second-img">
+                    <img src="img/Adv2a.gif" alt="" />
+                  </div>
+                </div>
+                <div class="text-area">
+                  <h3>ODASHBOARD’LA KOLAY ERİŞİM</h3>
+                  <p>
+                    Web ara yüzü sayesinde her yerden, dilediğiniz cihazdan erişin, kolayca yönetin!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="200" class="item">
+              <div class="item-wrapper">
+                <div class="img-area">
+                  <img src="img/Adv3.gif" alt="" />
+                  <div class="second-img">
+                    <img src="img/Adv3a.gif" alt="" />
+                  </div>
+                </div>
+                <div class="text-area">
+                  <h3>HARİTALANDIRMA VE KISALAN MESAFELER</h3>
+                  <p>
+                    Otonom yapı, lojistik depoyu haritalandırır ve en kısa erişim mesafelerini
+                    hesaplar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="200" class="item">
+              <div class="item-wrapper">
+                <div class="img-area">
+                  <img src="img/Adv4.gif" alt="" />
+                  <div class="second-img">
+                    <img src="img/Adv4a.gif" alt="" />
+                  </div>
+                </div>
+                <div class="text-area">
+                  <h3>TAM HİZMET (FULLFILLMENT)</h3>
+                  <p>
+                    Otonom robotlar sayesinde siparişten fullfillment'a otonom e-lojistik çözümleri
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="300" class="item">
+              <div class="item-wrapper border-none">
+                <div class="img-area">
+                  <img src="img/Adv5.gif" alt="" />
+                  <div class="second-img">
+                    <img src="img/Adv5a.gif" alt="" />
+                  </div>
+                </div>
+                <div class="text-area">
+                  <h3>İŞ BİRLİĞİYLE VERİMLİLİK</h3>
+                  <p>
+                    ADVO robotlar toplamada depo personeline destek olarak hata oranını minimize
+                    eder.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="300" class="item">
+              <div class="item-wrapper border-none">
+                <div class="img-area">
+                  <img src="img/Adv6.gif" alt="" />
+                  <div class="second-img">
+                    <img src="img/Adv6a.gif" alt="" />
+                  </div>
+                </div>
+                <div class="text-area">
+                  <h3>BÜTÜNSEL MALİYET AVANTAJLARI</h3>
+                  <p>
+                    Operasyonlar her noktada zaman ve paradan tasarruf ederek toplamda rekabetçi
+                    maliyet avantajları sağlanır.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line-area">
+            <img class="desktop-img" src="img/line.png" alt="" />
+            <img class="mobile-img" src="img/mobile-line.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="third-section">
+        <div class="container-sm">
+          <div class="number-wrapper">
+            <div data-aos="flip-up" class="col" data-aos-delay="100">
+              <svg
+                version="1.1"
+                id="Layer_2"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 200 171.9"
+                style="enable-background: new 0 0 200 171.9"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #e7e7e7;
+                    stroke: #000000;
+                    stroke-width: 0.3642;
+                    stroke-miterlimit: 10;
+                  }
+                  .st1 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 0.45;
+                    stroke-miterlimit: 10;
+                  }
+                  .st2 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 1.72;
+                    stroke-miterlimit: 10;
+                  }
+                  .st3 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 0.68;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <polyline class="st0" points="3.5,157.1 22.3,169.5 178.3,169.5 195.8,157.1 " />
+                <path
+                  d="M62.4,114.8c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-9.5c0-0.3,0.3-0.5,0.6-0.5s0.4,0.2,0.5,0.5v5.9l3.7-3.2
+                c0.2-0.2,0.6-0.2,0.8,0.1c0.2,0.2,0.2,0.6,0,0.8l0,0l-2.8,2.4l2.8,3.1c0.2,0.2,0.3,0.5,0.1,0.7l-0.1,0.1c-0.2,0.2-0.5,0.3-0.7,0.1
+                l-0.1-0.1l-2.8-3.1l-0.8,0.7v2.1c0,0.3-0.2,0.5-0.5,0.5C62.5,114.8,62.4,114.8,62.4,114.8z"
+                />
+                <path
+                  d="M71.6,114.8c-1.4-0.1-2.5-1.3-2.4-2.8c0-0.5,0.2-1.1,0.6-1.5c0.5-0.4,1.2-0.7,1.8-0.6h3.3c0-0.4-0.1-0.9-0.4-1.2
+                c-0.4-0.3-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.2c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4s-0.2,0.1-0.4,0.1
+                c-0.2,0-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9c1.4-0.2,2.7,0.7,2.9,2
+                c0,0.3,0,0.5,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-0.5c-0.6,0.7-1.5,1.1-2.4,1L71.6,114.8
+                z M71.6,113.6h0.8c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8V111h-3.3c-0.4,0-0.7,0.1-1,0.3
+                c-0.6,0.5-0.7,1.3-0.2,1.9C70.7,113.5,71.1,113.7,71.6,113.6z"
+                />
+                <path
+                  d="M82,114.8c-0.8,0.1-1.5-0.2-2.1-0.7c-0.5-0.6-0.8-1.4-0.7-2.1v-3.5h-0.8c-0.3,0-0.5-0.2-0.6-0.4V108c0-0.3,0.2-0.5,0.4-0.6
+                h0.1h0.8V106c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.2,0.6,0.4v0.1v1.3H82c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2
+                c0,0.3-0.1,0.5-0.4,0.6h-0.1h-1.8v3.5c-0.1,0.5,0.1,1,0.4,1.4c0.4,0.3,0.9,0.4,1.3,0.3c0.2,0,0.3,0,0.4,0.1s0.2,0.3,0.1,0.4
+                c0,0.3-0.1,0.5-0.4,0.6C82.1,114.8,82.1,114.8,82,114.8z"
+                />
+                <path
+                  d="M86.7,114.8c-1.1,0.2-2.2-0.6-2.4-1.7c0-0.2,0-0.5,0-0.7c-0.2-1.2,0.6-2.2,1.8-2.4c0.2,0,0.5,0,0.7,0H90
+                c0-0.4-0.1-0.9-0.4-1.2c-0.4-0.3-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4
+                s-0.2,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9
+                c1.4-0.2,2.7,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-0.5
+                c-0.6,0.7-1.5,1.1-2.4,1L86.7,114.8z M86.7,113.6h0.8c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.8-0.4c0.2-0.2,0.4-0.5,0.4-0.8V111
+                h-3.3c-0.4,0-0.7,0.1-1,0.3c-0.6,0.5-0.7,1.3-0.2,1.9C85.8,113.5,86.3,113.7,86.7,113.6L86.7,113.6z"
+                />
+                <path
+                  d="M99,114.8c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-9.5c0-0.3,0.3-0.5,0.6-0.5c0.3,0,0.4,0.2,0.5,0.5v5.9l3.7-3.2
+                c0.2-0.2,0.6-0.2,0.8,0.1c0.2,0.2,0.2,0.6,0,0.8l0,0l-2.8,2.4l2.8,3.1c0.2,0.2,0.2,0.5,0.1,0.7l-0.1,0.1c-0.2,0.2-0.5,0.3-0.7,0.1
+                l-0.1-0.1l-2.8-3.1l-0.8,0.7v2.1C99.6,114.5,99.4,114.7,99,114.8C99.1,114.8,99,114.8,99,114.8z"
+                />
+                <path
+                  d="M108.2,114.8c-1.2,0.2-2.2-0.6-2.4-1.8c0-0.2,0-0.5,0-0.7c-0.1-0.7,0.2-1.3,0.6-1.8c0.5-0.4,1.2-0.7,1.8-0.6h3.3
+                c0-0.4-0.1-0.9-0.4-1.2c-0.4-0.3-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4
+                s-0.2,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9
+                c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-0.5
+                c-0.6,0.7-1.5,1.1-2.4,1L108.2,114.8z M108.2,113.6h0.8c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8V111
+                h-3.3c-0.4,0-0.7,0.1-1,0.3c-0.6,0.5-0.7,1.3-0.2,1.9C107.3,113.5,107.8,113.7,108.2,113.6z"
+                />
+                <path
+                  d="M118.1,114.8c-1.4,0.2-2.7-0.7-2.9-2.1c0-0.3,0-0.5,0-0.8v-1.7c-0.2-1.4,0.7-2.7,2.1-2.9c0.3,0,0.5,0,0.8,0h3v-2.6
+                c0-0.3,0.2-0.5,0.6-0.5c0.3,0,0.5,0.2,0.5,0.5v9.5c0,0.3-0.2,0.6-0.5,0.6s-0.6-0.2-0.6-0.5l0,0V114c-0.3,0.3-0.6,0.5-0.9,0.6
+                c-0.5,0.2-1,0.2-1.5,0.2L118.1,114.8z M118.1,113.6h0.6c0.6,0,1.2-0.1,1.7-0.3c0.4-0.1,0.7-0.5,0.7-0.9v-4.1h-3
+                c-0.5-0.1-1,0.1-1.4,0.4c-0.3,0.4-0.4,0.9-0.4,1.4v1.7c-0.2,0.8,0.3,1.6,1,1.8C117.6,113.7,117.8,113.7,118.1,113.6L118.1,113.6z"
+                />
+                <path
+                  d="M127.3,114.8c-0.7,0.1-1.3-0.2-1.8-0.6c-0.8-1.1-0.8-2.6,0-3.7c0.5-0.4,1.2-0.7,1.8-0.6h3.3c0-0.4-0.1-0.9-0.4-1.2
+                c-0.4-0.3-0.9-0.4-1.3-0.3H128c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4s-0.3,0.1-0.4,0.1
+                c-0.2,0-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9c1.4-0.2,2.7,0.7,2.9,2.1
+                c0,0.3,0,0.5,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6c-0.1,0-0.1,0-0.2,0c-0.3,0-0.5-0.2-0.6-0.4v-0.1v-0.5c-0.6,0.7-1.5,1.1-2.4,1
+                L127.3,114.8z M127.3,113.6h0.9c0.4,0,0.8,0,1.1-0.1s0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8V111h-3.3c-0.4,0-0.7,0.1-1,0.3
+                c-0.6,0.5-0.7,1.3-0.2,1.9C126.4,113.5,126.9,113.7,127.3,113.6z"
+                />
+                <path
+                  d="M135.2,114.8c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.1,0.6,0.4
+                c0,0.1,0,0.1,0,0.2v0.8c0.3-0.4,0.7-0.8,1.1-1c0.5-0.2,1.1-0.4,1.6-0.3c0.3,0,0.5,0.1,0.6,0.4v0.1c0,0.3-0.2,0.5-0.4,0.6h-0.1
+                c-0.7,0-1.4,0.1-2,0.5c-0.5,0.3-0.7,0.9-0.8,1.4v3.8c0,0.3-0.1,0.5-0.4,0.6C135.3,114.8,135.2,114.8,135.2,114.8z"
+                />
+                <path
+                  d="M60.6,131.7c-1.2,0.2-2.3-0.6-2.4-1.8c0-0.2,0-0.4,0-0.6c-0.2-1.1,0.6-2.2,1.7-2.4c0.2,0,0.5,0,0.7,0h3.3
+                c0-0.4-0.1-0.9-0.4-1.2c-0.4-0.2-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4
+                c-0.1,0.1-0.2,0.1-0.4,0.1s-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.2c0.6-0.3,1.3-0.4,2-0.4h0.9
+                c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.2-0.6-0.4v-0.1v-0.5c-0.6,0.7-1.5,1.1-2.4,1
+                L60.6,131.7z M60.6,130.6h0.8c0.4,0,0.8,0,1.1-0.1s0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8V128h-3.3c-0.8,0.1-1.4,0.9-1.3,1.7
+                c0,0.2,0.1,0.5,0.3,0.7C59.9,130.6,60.3,130.7,60.6,130.6L60.6,130.6z"
+                />
+                <path
+                  d="M68.4,131.7c-0.3,0-0.5-0.2-0.6-0.4v-0.1v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v0.8
+                c0.3-0.4,0.7-0.8,1.1-1c0.5-0.2,1.1-0.4,1.6-0.3c0.3,0,0.5,0.1,0.6,0.4v0.1c0,0.3-0.2,0.5-0.4,0.6h-0.1c-0.7,0-1.4,0.1-2,0.5
+                c-0.5,0.3-0.7,0.9-0.8,1.4v3.9c0.1,0.3-0.1,0.5-0.4,0.6C68.6,131.7,68.5,131.7,68.4,131.7z"
+                />
+                <path
+                  d="M77.2,131.7c-1.3,0.2-2.6-0.7-2.8-2c0-0.3,0-0.5,0-0.8v-3.5h-0.8c-0.3,0-0.5-0.2-0.6-0.4v-0.1c0-0.3,0.2-0.5,0.4-0.6h0.1
+                h0.8V123c0-0.3,0.1-0.5,0.4-0.6c0.1,0,0.1,0,0.2,0c0.3,0,0.5,0.1,0.6,0.4v0.1v1.3h1.8c0.3,0,0.5,0.2,0.6,0.4v0.1
+                c0,0.3-0.1,0.5-0.4,0.6h-0.1h-1.8v3.5c-0.1,0.5,0.1,1,0.4,1.4c0.4,0.3,0.9,0.4,1.3,0.4c0.1,0,0.3,0,0.4,0.1s0.2,0.3,0.2,0.4
+                c0,0.3-0.2,0.5-0.4,0.6C77.3,131.7,77.3,131.7,77.2,131.7z"
+                />
+                <path
+                  d="M81.9,131.7c-1.2,0.2-2.3-0.6-2.4-1.8c0-0.2,0-0.4,0-0.6c-0.2-1.1,0.6-2.2,1.7-2.4c0.2,0,0.5,0,0.7,0h3.3
+                c0-0.4-0.1-0.9-0.4-1.2c-0.4-0.2-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c-0.1,0.1-0.1,0.3-0.2,0.4
+                s-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.2c0.6-0.3,1.3-0.4,2-0.4h0.9
+                c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4.1c0,0.3-0.2,0.6-0.5,0.6s-0.6-0.2-0.6-0.5l0,0v-0.5c-0.6,0.7-1.5,1.1-2.4,1
+                L81.9,131.7z M81.9,130.6h0.8c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8V128h-3.3
+                c-0.8,0.1-1.4,0.8-1.3,1.7c0,0.3,0.1,0.5,0.3,0.7C81.2,130.6,81.6,130.7,81.9,130.6L81.9,130.6z"
+                />
+                <path
+                  d="M89.8,131.7c-0.3,0-0.5-0.2-0.6-0.4v-0.1v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v0.4
+                c0.6-0.7,1.5-1.1,2.4-1h0.4c1.4-0.2,2.7,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4.1c0,0.3-0.2,0.6-0.5,0.6s-0.6-0.2-0.6-0.5v-0.1v-4.1
+                c0.1-0.5-0.1-1-0.4-1.4c-0.4-0.3-0.9-0.4-1.4-0.4h-0.4c-0.6,0-1.1,0.1-1.7,0.3c-0.4,0.1-0.7,0.4-0.8,0.8v4.7
+                C90.3,131.4,90.1,131.6,89.8,131.7C89.9,131.7,89.8,131.7,89.8,131.7z"
+                />
+                <path
+                  d="M106.3,131.3c0,0.1-0.1,0.2-0.3,0.3c-0.1,0.1-0.3,0.1-0.4,0.1c-0.3,0-0.5-0.2-0.6-0.4l-2.6-6.3c-0.1-0.2-0.1-0.5,0.1-0.7
+                c0,0,0.1-0.1,0.2-0.1c0.2-0.1,0.5-0.1,0.7,0.2c0,0,0,0.1,0.1,0.1l2.5,6h-0.6l2.7-6c0.1-0.1,0.2-0.2,0.3-0.3c0.1-0.1,0.3-0.1,0.4,0
+                c0.3,0.1,0.4,0.4,0.3,0.6c0,0,0,0.1-0.1,0.1L106.3,131.3z"
+                />
+                <path
+                  d="M111.7,128.4v0.4c0,0.5,0.1,1,0.4,1.4c0.4,0.3,0.9,0.4,1.4,0.4h1.2c0.4,0,0.8,0,1.2-0.2c0.3-0.1,0.4-0.3,0.5-0.6
+                c0-0.1,0.1-0.3,0.2-0.4c0.2-0.2,0.6-0.2,0.8,0c0.1,0.1,0.1,0.3,0.1,0.4c-0.1,0.6-0.4,1.1-0.8,1.4c-0.6,0.3-1.3,0.5-2,0.5h-1.2
+                c-0.8,0.1-1.6-0.2-2.2-0.7c-0.5-0.6-0.8-1.4-0.7-2.2v-1.7c-0.1-0.8,0.2-1.6,0.7-2.2c0.6-0.5,1.4-0.7,2.2-0.7h1.2
+                c1.4-0.2,2.7,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v0.8c0,0.3-0.1,0.5-0.4,0.6h-0.1L111.7,128.4z M113.4,125.4c-0.5-0.1-1,0.1-1.4,0.4
+                c-0.3,0.4-0.4,0.9-0.4,1.4v0.2h4.8v-0.2c0.2-0.8-0.3-1.6-1-1.8c-0.2-0.1-0.5-0.1-0.7,0H113.4z"
+                />
+                <path
+                  d="M120.8,131.7c-0.3,0-0.5-0.2-0.6-0.4v-0.1v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v0.8
+                c0.3-0.4,0.7-0.8,1.1-1c0.5-0.2,1.1-0.4,1.7-0.3c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2c0,0.3-0.1,0.5-0.4,0.6h-0.1
+                c-0.7,0-1.4,0.1-2,0.5c-0.5,0.3-0.7,0.9-0.8,1.4v3.9c0.1,0.3-0.1,0.5-0.4,0.6C121,131.7,120.9,131.7,120.8,131.7z"
+                />
+                <path
+                  d="M126.8,123c-0.3,0-0.6-0.2-0.7-0.5c0-0.1,0-0.1,0-0.2v-0.4c0-0.3,0.2-0.6,0.5-0.7c0.1,0,0.1,0,0.2,0h0.4
+                c0.4,0,0.6,0.2,0.6,0.7v0.4c0,0.4-0.2,0.7-0.6,0.7H126.8z M127,131.7c-0.3,0-0.5-0.2-0.6-0.4v-0.1v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1
+                c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v6.4c0,0.3-0.1,0.5-0.4,0.6C127.1,131.7,127.1,131.7,127,131.7L127,131.7z"
+                />
+                <path
+                  d="M138.9,124.2c0.7-0.1,1.5,0.2,2,0.7c0.4,0.6,0.7,1.4,0.6,2.2v4.1c0,0.3-0.2,0.5-0.4,0.6H141c-0.3,0-0.5-0.2-0.6-0.4v-0.1
+                v-4.1c0-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.7-0.4-1.1-0.4h-0.6c-0.5,0-0.9,0.1-1.3,0.4c-0.3,0.4-0.4,0.8-0.4,1.3v4.1
+                c0,0.3-0.1,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.2-0.6-0.4v-0.1v-4.1c0-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.7-0.4-1.1-0.4h-0.6
+                c-0.5,0-0.9,0.1-1.3,0.4c-0.3,0.4-0.4,0.8-0.4,1.3v4.1c0,0.3-0.2,0.6-0.6,0.6s-0.6-0.2-0.6-0.6V125c0-0.3,0.2-0.6,0.6-0.6
+                s0.6,0.2,0.6,0.6l0,0v0.4c0.2-0.3,0.5-0.6,0.9-0.8c0.4-0.2,0.8-0.2,1.1-0.2h0.3c0.5,0,1,0.1,1.4,0.3c0.4,0.2,0.6,0.5,0.8,0.9
+                c0.2-0.4,0.5-0.7,0.8-0.9c0.4-0.2,0.8-0.3,1.2-0.3L138.9,124.2z"
+                />
+                <path
+                  d="M52.2,84.8v-2.4l14.7-17.9L52.2,47.2v-2.4H62l10.8,12.7l10.8-12.7h9.8v2.4L78.7,64.5l14.7,17.9v2.4h-9.7L72.8,71.6L62,84.8
+                H52.2z"
+                />
+                <path
+                  d="M103.8,83.6c-1.4-0.9-2.6-2-3.4-3.4c-0.9-1.4-1.3-3.1-1.3-4.8v-3h9V75c0,0.2,0.1,0.4,0.2,0.6c0.2,0.2,0.4,0.2,0.6,0.2h29.5
+                c0.2,0,0.5-0.1,0.6-0.2c0.2-0.1,0.3-0.4,0.3-0.6V65c0-0.2-0.1-0.4-0.3-0.6s-0.4-0.2-0.6-0.2h-30.7v-9h28.8c0.5,0,0.8-0.4,0.8-0.8
+                l0,0V45c0-0.2-0.1-0.4-0.2-0.6c-0.2-0.2-0.4-0.3-0.6-0.3H109c-0.2,0-0.4,0.1-0.6,0.3s-0.2,0.4-0.2,0.6v3.2h-9v-3.6
+                c0-1.7,0.4-3.4,1.3-4.8c0.8-1.4,2-2.6,3.4-3.4c1.5-0.9,3.1-1.3,4.8-1.3h28.1c1.7,0,3.4,0.4,4.8,1.3c1.4,0.8,2.6,2,3.4,3.4
+                c0.9,1.5,1.3,3.1,1.3,4.8v10.1c0,0.6,0,1.1-0.1,1.7c-0.1,0.6-0.2,1.1-0.4,1.6c0.8,0.9,1.5,1.9,1.9,3.1c0.4,1.1,0.6,2.3,0.6,3.5v10.6
+                c0,1.7-0.5,3.3-1.4,4.8c-0.8,1.4-2,2.6-3.4,3.5s-3.1,1.3-4.8,1.3h-30.2C107,84.9,105.3,84.4,103.8,83.6z"
+                />
+                <rect x="3.4" y="3.6" class="st1" width="191.6" height="153.8" />
+                <polyline class="st2" points="8,3.6 3.4,3.6 3.4,8.1 " />
+                <polyline class="st2" points="190.4,3.6 195,3.6 195,8.1 " />
+                <polyline class="st2" points="8,157.3 3.4,157.3 3.4,152.7 " />
+                <polyline class="st2" points="190.4,157.3 195,157.3 195,152.7 " />
+                <line class="st3" x1="36.2" y1="111.1" x2="36.2" y2="123.3" />
+                <line class="st3" x1="30" y1="117.2" x2="42.3" y2="117.2" />
+                <line class="st3" x1="160.7" y1="111.1" x2="160.7" y2="123.3" />
+                <line class="st3" x1="154.5" y1="117.2" x2="166.8" y2="117.2" />
+              </svg>
+            </div>
+            <div data-aos="flip-up" data-aos-delay="200" class="col">
+              <svg
+                version="1.1"
+                id="Layer_2"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 200 172"
+                style="enable-background: new 0 0 200 172"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #e7e7e7;
+                    stroke: #000000;
+                    stroke-width: 0.3634;
+                    stroke-miterlimit: 10;
+                  }
+                  .st1 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 0.45;
+                    stroke-miterlimit: 10;
+                  }
+                  .st2 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 1.72;
+                    stroke-miterlimit: 10;
+                  }
+                  .st3 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 0.68;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <polyline class="st0" points="3.7,156.6 22.4,169 178.1,169 195.6,156.6 " />
+                <path
+                  d="M73.7,114.1c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2V104c0-0.3,0.3-0.5,0.6-0.5c0.3,0,0.4,0.2,0.5,0.5v3.5
+                c0.6-0.7,1.5-1.1,2.4-1H77c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.6,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.1-0.6-0.4
+                c0-0.1,0-0.1,0-0.2v-4c0.2-0.8-0.3-1.6-1-1.8c-0.2-0.1-0.5-0.1-0.7,0h-0.4c-0.6,0-1.1,0.1-1.7,0.3c-0.4,0.1-0.7,0.4-0.8,0.8v4.7
+                c0,0.3-0.1,0.5-0.4,0.6C73.8,114.1,73.8,114.1,73.7,114.1z"
+                />
+                <path
+                  d="M84.9,114.1c-1.3,0.1-2.5-0.9-2.7-2.2c-0.1-1.3,0.9-2.5,2.2-2.7c0.1,0,0.3,0,0.4,0h3.3c0-0.4-0.1-0.9-0.4-1.2
+                c-0.4-0.3-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4s-0.2,0.1-0.4,0.1
+                c-0.2,0-0.3-0.1-0.4-0.2s-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9c1.4-0.2,2.7,0.7,2.9,2.1
+                c0,0.3,0,0.5,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2V113c-0.6,0.7-1.5,1.1-2.4,1L84.9,114.1z
+                 M84.9,113h0.8c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8v-1.3h-3.3c-0.4,0-0.7,0.1-1,0.3
+                c-0.6,0.5-0.7,1.3-0.2,1.9C84,112.9,84.4,113.1,84.9,113z"
+                />
+                <path
+                  d="M93,114.1c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-5.8h-0.6c-0.3,0-0.6-0.2-0.6-0.5s0.2-0.6,0.5-0.6l0,0h0.6v-0.3
+                c-0.2-1.4,0.7-2.6,2.1-2.8c0.3,0,0.5,0,0.8,0s0.5,0.2,0.5,0.6s-0.2,0.6-0.5,0.6c-0.5,0-1,0.1-1.4,0.4c-0.3,0.4-0.4,0.9-0.4,1.4v0.3
+                h1.7c0.3,0,0.6,0.2,0.6,0.5s-0.2,0.6-0.5,0.6l0,0h-1.7v5.8C93.5,113.8,93.4,114.1,93,114.1C93.1,114.1,93,114.1,93,114.1z"
+                />
+                <path
+                  d="M100.8,114.1c-1.3,0.2-2.6-0.7-2.8-2c0-0.3,0-0.5,0-0.8v-3.6h-0.8c-0.3,0-0.6-0.2-0.6-0.5s0.2-0.6,0.5-0.6l0,0H98v-1.3
+                c0-0.3,0.1-0.5,0.4-0.6h0.1c0.3,0,0.5,0.2,0.6,0.4v0.1v1.3h1.8c0.3,0,0.5,0.2,0.5,0.6c0,0.3-0.2,0.5-0.5,0.5h-1.8v3.6
+                c-0.1,0.5,0.1,1,0.4,1.3c0.4,0.3,0.9,0.4,1.4,0.4c0.1,0,0.3,0,0.4,0.1s0.2,0.3,0.2,0.4c0,0.3-0.1,0.5-0.4,0.6
+                C100.9,114.1,100.9,114.1,100.8,114.1z"
+                />
+                <path
+                  d="M105.5,114.1c-1.2,0.2-2.3-0.6-2.4-1.8c0-0.2,0-0.4,0-0.6c-0.1-0.7,0.2-1.3,0.6-1.8c0.5-0.4,1.2-0.7,1.8-0.6h3.3
+                c0-0.4-0.1-0.9-0.4-1.2c-0.4-0.3-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4
+                s-0.2,0.1-0.4,0.1c-0.2,0-0.3-0.1-0.4-0.2s-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9
+                c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2V113
+                c-0.6,0.7-1.5,1.1-2.4,1L105.5,114.1z M105.5,113h0.8c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8v-1.3
+                h-3.3c-0.4,0-0.7,0.1-1.1,0.3c-0.6,0.5-0.7,1.3-0.2,1.9C104.6,112.9,105.1,113.1,105.5,113z"
+                />
+                <path
+                  d="M115.4,114.1c-1.4,0.2-2.7-0.7-2.9-2.1c0-0.3,0-0.5,0-0.8v-1.7c-0.1-0.8,0.2-1.6,0.7-2.2c0.6-0.5,1.4-0.8,2.2-0.7h3V104
+                c0-0.3,0.3-0.5,0.6-0.5c0.3,0,0.4,0.2,0.5,0.5v9.5c0,0.3-0.2,0.6-0.5,0.6s-0.6-0.2-0.6-0.5v-0.1v-0.3c-0.3,0.3-0.6,0.5-0.9,0.6
+                c-0.5,0.2-1,0.2-1.5,0.2L115.4,114.1L115.4,114.1z M115.4,113h0.6c0.6,0,1.2-0.1,1.7-0.3c0.4-0.1,0.7-0.5,0.7-0.9v-4.1h-3
+                c-0.8-0.2-1.6,0.3-1.8,1c-0.1,0.2-0.1,0.5,0,0.7v1.7c-0.2,0.8,0.3,1.6,1.1,1.8C114.9,113.1,115.2,113.1,115.4,113L115.4,113z"
+                />
+                <path
+                  d="M124.7,114.1c-0.7,0.1-1.3-0.2-1.8-0.6c-0.4-0.5-0.6-1.2-0.6-1.8c-0.1-0.7,0.2-1.3,0.6-1.8c0.5-0.4,1.2-0.7,1.8-0.6h3.3
+                c0-0.4-0.1-0.9-0.4-1.2c-0.4-0.3-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4
+                s-0.2,0.1-0.4,0.1c-0.2,0-0.3-0.1-0.4-0.2s-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9
+                c1.4-0.2,2.7,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4c0,0.3-0.2,0.6-0.5,0.6s-0.6-0.2-0.6-0.5v-0.1V113c-0.6,0.7-1.5,1.1-2.4,1L124.7,114.1
+                z M124.7,113h0.8c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8v-1.3h-3.3c-0.4,0-0.7,0.1-1,0.3
+                c-0.6,0.5-0.7,1.3-0.2,1.9C123.7,112.9,124.2,113.1,124.7,113z"
+                />
+                <path
+                  d="M72.4,131.1c-0.3,0-0.5-0.1-0.6-0.4v-0.1v-9.5c0-0.3,0.2-0.6,0.5-0.6s0.6,0.2,0.6,0.5v0.1v5.9l3.7-3.2
+                c0.2-0.2,0.6-0.2,0.8,0.1c0.2,0.2,0.2,0.6,0,0.8l-2.8,2.4l2.8,3.1c0.2,0.2,0.3,0.5,0.1,0.7l-0.1,0.1c-0.2,0.2-0.5,0.3-0.7,0.1
+                l-0.1-0.1l-2.8-3.1l-0.8,0.7v2.1c0,0.3-0.2,0.5-0.5,0.5C72.5,131.1,72.4,131.1,72.4,131.1z"
+                />
+                <path
+                  d="M85.5,123.6c0.3,0,0.5,0.1,0.6,0.4v0.1v6.4c0,0.3-0.2,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-0.4
+                c-0.6,0.7-1.5,1.1-2.4,1h-0.4c-1.4,0.2-2.6-0.7-2.9-2.1c0-0.3,0-0.5,0-0.8v-4c0-0.3,0.1-0.5,0.4-0.6c0.1,0,0.1,0,0.2,0
+                c0.3,0,0.5,0.1,0.6,0.4v0.1v4c-0.2,0.8,0.3,1.6,1,1.8c0.2,0.1,0.5,0.1,0.7,0h0.4c0.6,0,1.1-0.1,1.7-0.3c0.4-0.1,0.7-0.4,0.8-0.8
+                v-4.7C85,123.8,85.2,123.6,85.5,123.6C85.3,123.6,85.4,123.6,85.5,123.6z"
+                />
+                <path
+                  d="M89.6,131.1c-0.3,0-0.5-0.1-0.6-0.4v-0.1v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v0.8
+                c0.3-0.4,0.7-0.8,1.1-1c0.5-0.2,1.1-0.4,1.6-0.3c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2c0,0.3-0.1,0.5-0.4,0.6h-0.1
+                c-0.7,0-1.4,0.1-2,0.5c-0.5,0.3-0.7,0.9-0.8,1.4v3.9c0.1,0.3-0.1,0.5-0.4,0.6C89.8,131.1,89.7,131.1,89.6,131.1z"
+                />
+                <path
+                  d="M101.4,123.6c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v6.4c0,0.3-0.1,0.5-0.4,0.6c-0.1,0-0.1,0-0.2,0
+                c-0.3,0-0.5-0.1-0.6-0.4v-0.1v-0.4c-0.6,0.7-1.5,1.1-2.4,1H98c-0.8,0.1-1.6-0.2-2.2-0.7c-0.5-0.6-0.8-1.4-0.7-2.2v-4
+                c0-0.3,0.1-0.5,0.4-0.6c0.1,0,0.1,0,0.2,0c0.3,0,0.5,0.1,0.6,0.4v0.1v4c-0.2,0.8,0.3,1.6,1.1,1.8c0.2,0.1,0.5,0.1,0.7,0h0.4
+                c0.6,0,1.1-0.1,1.7-0.3c0.4-0.1,0.7-0.4,0.8-0.8v-4.7c-0.1-0.3,0.1-0.5,0.4-0.6C101.3,123.6,101.3,123.6,101.4,123.6z"
+                />
+                <path
+                  d="M107.2,131.1c-1.1,0.2-2-0.5-2.2-1.6c0-0.2,0-0.4,0-0.6v-7.8c0-0.3,0.1-0.5,0.4-0.6h0.1c0.3,0,0.5,0.2,0.6,0.4v0.1v7.8
+                c0,0.3,0,0.6,0.2,0.9c0.3,0.2,0.6,0.3,0.9,0.2c0.3,0,0.5,0.2,0.6,0.4v0.1C107.8,130.9,107.6,131.1,107.2,131.1z"
+                />
+                <path
+                  d="M116.1,123.6c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v6.4c0,0.3-0.1,0.5-0.4,0.6c-0.1,0-0.1,0-0.2,0
+                c-0.3,0-0.5-0.1-0.6-0.4v-0.1v-0.4c-0.6,0.7-1.5,1.1-2.4,1h-0.4c-0.8,0.1-1.6-0.2-2.2-0.7c-0.5-0.6-0.8-1.4-0.7-2.2v-4
+                c0-0.3,0.3-0.5,0.6-0.5c0.3,0,0.4,0.2,0.5,0.5v4c-0.2,0.8,0.3,1.6,1,1.8c0.2,0.1,0.5,0.1,0.7,0h0.4c0.6,0,1.1-0.1,1.7-0.3
+                c0.4-0.1,0.7-0.4,0.8-0.8v-4.7c-0.1-0.3,0.1-0.5,0.4-0.6C115.9,123.6,116,123.6,116.1,123.6z"
+                />
+                <path
+                  d="M127.9,123.6c0.7-0.1,1.5,0.2,2,0.7c0.4,0.6,0.7,1.4,0.6,2.2v4.1c0,0.3-0.3,0.5-0.6,0.5s-0.4-0.2-0.5-0.5v-4.1
+                c0-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.7-0.4-1.1-0.4h-0.6c-0.5,0-0.9,0.1-1.3,0.4c-0.3,0.4-0.4,0.8-0.4,1.3v4.1c0,0.3-0.1,0.5-0.4,0.6
+                c-0.1,0-0.1,0-0.2,0c-0.3,0-0.5-0.1-0.6-0.4v-0.1v-4.1c0-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.7-0.4-1.1-0.4h-0.6c-0.5,0-0.9,0.1-1.3,0.4
+                c-0.3,0.4-0.4,0.8-0.4,1.3v4.1c0,0.3-0.2,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-6.4c0-0.3,0.1-0.5,0.4-0.6
+                c0.1,0,0.1,0,0.2,0c0.3,0,0.5,0.1,0.6,0.4v0.1v0.4c0.2-0.3,0.5-0.6,0.8-0.8c0.4-0.2,0.8-0.2,1.2-0.2h0.3c0.5,0,1,0.1,1.4,0.3
+                c0.4,0.2,0.6,0.5,0.8,0.9c0.2-0.4,0.5-0.7,0.8-0.9c0.4-0.2,0.8-0.3,1.2-0.3L127.9,123.6z"
+                />
+                <path
+                  d="M50.9,82.8c-1.4-0.9-2.6-2.2-3.5-3.7s-1.3-3.1-1.3-4.8v-30c0-1.7,0.4-3.4,1.3-4.9c0.9-1.4,2-2.6,3.5-3.5
+                c1.4-0.9,3.1-1.4,4.8-1.3h30.2c1.7,0,3.3,0.4,4.8,1.3c1.4,0.9,2.6,2.1,3.4,3.5c0.9,1.5,1.3,3.1,1.3,4.9v30c0,1.7-0.4,3.4-1.3,4.8
+                c-0.8,1.5-2,2.8-3.4,3.7c-1.4,0.9-3.1,1.4-4.8,1.4H55.7C54,84.2,52.3,83.7,50.9,82.8z M55.2,66.3l27-22.5H56c-0.5,0-0.8,0.4-0.8,0.8
+                l0,0V66.3z M59.3,74.7h26.2c0.2,0,0.4-0.1,0.6-0.2c0.2-0.2,0.2-0.4,0.3-0.6V52.2L59.3,74.7z"
+                />
+                <path
+                  d="M102.3,84.2v-19c0-1.7,0.4-3.4,1.3-4.8c0.8-1.4,2-2.6,3.4-3.4c1.4-0.9,3.1-1.3,4.8-1.3h29.8c0.5,0,0.8-0.4,0.8-0.8V44.4
+                c0-0.2-0.1-0.4-0.2-0.6c-0.2-0.2-0.4-0.2-0.6-0.2h-29.4c-0.2,0-0.4,0.1-0.6,0.2c-0.2,0.2-0.2,0.4-0.2,0.6v3.4h-9V44
+                c0-1.7,0.4-3.4,1.3-4.8c0.8-1.4,2-2.6,3.4-3.4c1.4-0.9,3.1-1.3,4.8-1.3H142c1.7,0,3.3,0.4,4.8,1.3c1.4,0.8,2.6,2,3.4,3.4
+                c0.9,1.5,1.3,3.1,1.3,4.8v11.2c0,1.7-0.4,3.3-1.3,4.7c-0.8,1.4-2,2.6-3.4,3.5s-3.1,1.3-4.8,1.3h-29.8c-0.2,0-0.4,0.1-0.6,0.2
+                c-0.2,0.2-0.2,0.4-0.2,0.6v8.8c0,0.5,0.4,0.8,0.8,0.8l0,0h39.3v9L102.3,84.2z"
+                />
+                <rect x="4" y="2.9" class="st1" width="191.6" height="153.8" />
+                <polyline class="st2" points="8.6,2.9 4,2.9 4,7.5 " />
+                <polyline class="st2" points="191,2.9 195.6,2.9 195.6,7.5 " />
+                <polyline class="st2" points="8.6,156.7 4,156.7 4,152.1 " />
+                <polyline class="st2" points="191,156.7 195.6,156.7 195.6,152.1 " />
+                <line class="st3" x1="38.8" y1="110.4" x2="38.8" y2="122.7" />
+                <line class="st3" x1="32.6" y1="116.5" x2="44.9" y2="116.5" />
+                <line class="st3" x1="163.3" y1="110.4" x2="163.3" y2="122.7" />
+                <line class="st3" x1="157.1" y1="116.5" x2="169.4" y2="116.5" />
+              </svg>
+            </div>
+            <div data-aos="flip-up" data-aos-delay="300" class="col">
+              <svg
+                version="1.1"
+                id="Layer_2"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 200 171.5"
+                style="enable-background: new 0 0 200 171.5"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #e7e7e7;
+                    stroke: #000000;
+                    stroke-width: 0.3641;
+                    stroke-miterlimit: 10;
+                  }
+                  .st1 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 0.45;
+                    stroke-miterlimit: 10;
+                  }
+                  .st2 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 1.72;
+                    stroke-miterlimit: 10;
+                  }
+                  .st3 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 0.68;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <polyline class="st0" points="4.8,157.2 23.6,169.6 179.6,169.6 197,157.2 " />
+                <path
+                  d="M64.8,114.5c-0.8,0.1-1.6-0.2-2.2-0.7c-0.5-0.6-0.8-1.4-0.7-2.2v-1.7c-0.2-1.4,0.7-2.6,2.1-2.9c0.3,0,0.6,0,0.8,0H66
+                c1.4-0.2,2.7,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v1.7c0.1,0.8-0.2,1.6-0.7,2.2c-0.6,0.5-1.4,0.8-2.2,0.7H64.8z M63,111.7
+                c0,0.5,0.1,1,0.4,1.3c0.4,0.3,0.9,0.4,1.4,0.4H66c0.5,0.1,1-0.1,1.4-0.4c0.3-0.4,0.4-0.9,0.4-1.4v-1.7c0.1-0.5-0.1-1-0.4-1.4
+                c-0.4-0.3-0.9-0.4-1.4-0.4h-1.2c-0.4,0-0.7,0-1.1,0.2c-0.2,0.1-0.4,0.3-0.5,0.6c-0.1,0.3-0.2,0.7-0.2,1.1L63,111.7z"
+                />
+                <path
+                  d="M72.2,114.5c-0.3,0-0.5-0.1-0.6-0.4V114v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v0.8
+                c0.3-0.4,0.7-0.8,1.1-1c0.5-0.2,1.1-0.4,1.6-0.3c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2c0,0.3-0.1,0.5-0.4,0.6h-0.1
+                c-0.7,0-1.4,0.1-2,0.5c-0.5,0.3-0.7,0.9-0.8,1.4v3.9C72.7,114.4,72.5,114.6,72.2,114.5C72.3,114.5,72.2,114.5,72.2,114.5z"
+                />
+                <path
+                  d="M79.7,114.5c-1.3,0.1-2.5-0.9-2.7-2.2c-0.1-1.3,0.9-2.5,2.2-2.7c0.1,0,0.3,0,0.4,0h3.3c0-0.4-0.1-0.9-0.4-1.2
+                c-0.4-0.3-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4s-0.2,0.1-0.4,0.1
+                c-0.2,0-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9c1.4-0.2,2.6,0.7,2.8,2.1
+                c0,0.3,0,0.5,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6c-0.1,0-0.1,0-0.2,0c-0.3,0-0.5-0.1-0.6-0.4v-0.1v-0.5c-0.6,0.7-1.5,1.1-2.4,1
+                L79.7,114.5z M79.7,113.4h0.8c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8v-1.3h-3.3
+                c-0.7-0.1-1.4,0.4-1.6,1.1c-0.1,0.7,0.4,1.4,1.1,1.6C79.3,113.4,79.5,113.4,79.7,113.4z"
+                />
+                <path
+                  d="M87.5,114.5c-0.3,0-0.5-0.1-0.6-0.4V114v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v0.4
+                c0.6-0.7,1.5-1.1,2.4-1h0.4c1.4-0.2,2.7,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4c0,0.3-0.2,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.1-0.6-0.4
+                c0-0.1,0-0.1,0-0.2v-4c0.1-0.5-0.1-1-0.4-1.4c-0.4-0.3-0.9-0.4-1.4-0.4h-0.4c-0.6,0-1.1,0.1-1.7,0.3c-0.4,0.1-0.7,0.4-0.8,0.8v4.8
+                C87.9,114.3,87.7,114.5,87.5,114.5C87.6,114.5,87.5,114.5,87.5,114.5z"
+                />
+                <path
+                  d="M97.2,114.5c-0.3,0-0.5-0.1-0.6-0.4V114v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v6.4
+                C97.7,114.3,97.5,114.5,97.2,114.5C97.3,114.5,97.2,114.5,97.2,114.5z"
+                />
+                <path
+                  d="M101.3,114.5c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-6.4c0-0.3,0.1-0.5,0.4-0.6c0.1,0,0.1,0,0.2,0
+                c0.3,0,0.5,0.1,0.6,0.4v0.1v0.4c0.6-0.7,1.5-1.1,2.4-1h0.4c0.8-0.1,1.6,0.2,2.2,0.7c0.5,0.6,0.8,1.4,0.7,2.2v4
+                c0,0.3-0.3,0.5-0.6,0.5c-0.3,0-0.4-0.2-0.5-0.5v-4c0.1-0.5-0.1-1-0.4-1.4c-0.4-0.3-0.9-0.4-1.4-0.4h-0.4c-0.6,0-1.1,0.1-1.7,0.3
+                c-0.4,0.1-0.7,0.4-0.8,0.8v4.8c0,0.3-0.2,0.5-0.5,0.5C101.4,114.5,101.4,114.5,101.3,114.5z"
+                />
+                <path
+                  d="M113.1,114.5c-1.4,0.2-2.7-0.7-2.9-2.1c0-0.3,0-0.6,0-0.8v-1.7c-0.2-1.4,0.7-2.6,2.1-2.9c0.3,0,0.5,0,0.8,0h3v-2.5
+                c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.2,0.6,0.4v0.1v9.5c0,0.3-0.1,0.5-0.4,0.6c-0.1,0-0.1,0-0.2,0c-0.3,0-0.5-0.1-0.6-0.4V114
+                v-0.3c-0.2,0.3-0.6,0.5-0.9,0.6c-0.5,0.2-1,0.2-1.5,0.2L113.1,114.5z M113.1,113.4h0.6c0.6,0,1.2-0.1,1.8-0.3
+                c0.4-0.1,0.7-0.5,0.7-0.9v-4.1h-3c-0.8-0.2-1.6,0.2-1.8,1c-0.1,0.2-0.1,0.5,0,0.7v1.7c-0.1,0.5,0.1,1,0.4,1.4
+                C112.1,113.3,112.6,113.5,113.1,113.4z"
+                />
+                <path
+                  d="M122.4,114.5c-1.2,0.2-2.2-0.6-2.4-1.8c0-0.2,0-0.5,0-0.7c-0.1-0.7,0.2-1.3,0.6-1.8c0.5-0.4,1.2-0.7,1.8-0.6h3.3
+                c0-0.4-0.1-0.9-0.4-1.2c-0.4-0.3-0.9-0.4-1.3-0.3h-1c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4
+                s-0.2,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9
+                c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4c0,0.3-0.1,0.5-0.4,0.6c-0.1,0-0.1,0-0.2,0c-0.3,0-0.5-0.1-0.6-0.4v-0.1v-0.5
+                c-0.6,0.7-1.5,1.1-2.4,1L122.4,114.5z M122.4,113.4h0.8c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8v-1.3
+                h-3.3c-0.7-0.1-1.4,0.4-1.6,1.1c-0.1,0.7,0.4,1.4,1.1,1.6C122.1,113.4,122.2,113.4,122.4,113.4z"
+                />
+                <path
+                  d="M42.2,131.5c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-6.4c0-0.3,0.3-0.5,0.6-0.5s0.4,0.2,0.5,0.5v0.8
+                c0.3-0.4,0.7-0.8,1.1-1c0.5-0.2,1.1-0.4,1.6-0.4c0.3,0,0.5,0.1,0.6,0.4v0.1c0,0.3-0.1,0.5-0.4,0.6c-0.1,0-0.1,0-0.2,0
+                c-0.7,0-1.4,0.1-2,0.5c-0.5,0.3-0.7,0.9-0.8,1.4v3.9C42.7,131.1,42.5,131.3,42.2,131.5C42.3,131.5,42.2,131.5,42.2,131.5z"
+                />
+                <path
+                  d="M48.3,128.2v0.4c-0.2,0.8,0.3,1.6,1,1.8c0.2,0.1,0.5,0.1,0.7,0h1.2c0.4,0,0.8,0,1.2-0.2c0.3-0.1,0.4-0.3,0.5-0.6
+                c0-0.1,0.1-0.3,0.2-0.4c0.1-0.1,0.3-0.1,0.4-0.1c0.2,0,0.3,0,0.4,0.1c0.1,0.1,0.1,0.3,0.1,0.4c-0.1,0.6-0.4,1.1-0.8,1.4
+                c-0.6,0.3-1.3,0.5-2,0.5H50c-1.4,0.2-2.7-0.7-2.9-2.1c0-0.3,0-0.5,0-0.8v-1.7c-0.1-0.8,0.2-1.6,0.7-2.2c0.6-0.5,1.4-0.7,2.2-0.7h1.2
+                c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v0.8c0,0.3-0.1,0.5-0.4,0.6h-0.1L48.3,128.2L48.3,128.2z M50.1,125.1
+                c-0.5-0.1-1,0.1-1.4,0.4c-0.3,0.4-0.4,0.9-0.4,1.4v0.2h4.8v-0.2c0.2-0.8-0.3-1.6-1-1.8c-0.2-0.1-0.5-0.1-0.7,0H50.1z"
+                />
+                <path
+                  d="M57.5,131.5c-0.3,0-0.5-0.1-0.6-0.4c0-0.1,0-0.1,0-0.2v-9.5c0-0.3,0.3-0.5,0.6-0.5s0.4,0.2,0.5,0.5v5.9l3.7-3.2
+                c0.2-0.2,0.5-0.2,0.7,0l0.1,0.1c0.2,0.2,0.2,0.5,0,0.7l-0.1,0.1l-2.8,2.4l2.8,3.1c0.2,0.1,0.3,0.4,0.1,0.7l-0.1,0.1
+                c-0.2,0.2-0.5,0.3-0.7,0.1l-0.1-0.1l-2.8-3.1l-0.8,0.7v2.1C58,131.3,57.8,131.5,57.5,131.5C57.6,131.5,57.5,131.5,57.5,131.5z"
+                />
+                <path
+                  d="M66.7,131.5c-0.7,0.1-1.3-0.2-1.8-0.6c-1-0.9-1.1-2.4-0.2-3.4c0.5-0.6,1.3-0.9,2.1-0.8H70c0-0.4-0.1-0.9-0.4-1.2
+                c-0.4-0.2-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4c-0.2,0.2-0.6,0.2-0.8,0
+                c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.2c0.6-0.3,1.3-0.4,2-0.4h0.9c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v4
+                c0,0.3-0.1,0.5-0.4,0.6h-0.1c-0.3,0-0.5-0.2-0.6-0.4v-0.1v-0.5c-0.6,0.7-1.5,1.1-2.4,1L66.7,131.5z M66.7,130.4h0.8
+                c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.5-0.8v-1.3h-3.3c-0.4,0-0.7,0.1-1,0.3c-0.2,0.3-0.3,0.6-0.3,1
+                s0.1,0.7,0.3,1.1C66,130.3,66.4,130.4,66.7,130.4z"
+                />
+                <path
+                  d="M74.6,131.5c-0.3,0-0.5-0.2-0.6-0.4V131v-9.5c0-0.3,0.3-0.5,0.6-0.5c0.3,0,0.4,0.2,0.5,0.5v3.4c0.3-0.3,0.6-0.5,1-0.7
+                c0.5-0.2,1-0.2,1.4-0.2h0.6c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v1.7c0.2,1.4-0.7,2.7-2.1,2.9c-0.3,0-0.5,0-0.8,0h-0.6
+                c-0.5,0-1-0.1-1.4-0.2c-0.4-0.1-0.7-0.4-1-0.7v0.3C75.1,131.2,75,131.4,74.6,131.5C74.6,131.5,74.6,131.5,74.6,131.5z M77.6,130.4
+                h0.6c0.5,0,1-0.1,1.4-0.4c0.3-0.4,0.4-0.9,0.4-1.4v-1.7c0.2-0.8-0.3-1.6-1-1.8c-0.2-0.1-0.5-0.1-0.7,0h-0.6c-0.6,0-1.2,0.1-1.7,0.3
+                c-0.4,0.1-0.7,0.5-0.7,0.9v2.9c0,0.4,0.3,0.8,0.7,0.9C76.3,130.3,76.9,130.4,77.6,130.4L77.6,130.4z"
+                />
+                <path
+                  d="M84.5,128.2v0.4c-0.1,0.5,0.1,1,0.4,1.4c0.4,0.3,0.9,0.4,1.4,0.4h1.2c0.4,0,0.8,0,1.2-0.2c0.3-0.1,0.4-0.3,0.5-0.6
+                c0-0.1,0.1-0.3,0.2-0.4c0.1-0.1,0.2-0.1,0.4-0.1c0.2,0,0.3,0,0.4,0.1s0.1,0.3,0.1,0.4c-0.1,0.6-0.4,1.1-0.8,1.4
+                c-0.6,0.3-1.3,0.5-2,0.5h-1.2c-0.8,0.1-1.6-0.2-2.2-0.7c-0.5-0.6-0.8-1.4-0.7-2.2v-1.7c-0.2-1.3,0.6-2.6,2-2.9
+                c0.3-0.1,0.6-0.1,0.9,0h1.2c1.4-0.2,2.6,0.7,2.9,2.1c0,0.3,0,0.5,0,0.8v0.8c0,0.3-0.1,0.5-0.4,0.6h-0.1L84.5,128.2z M86.3,125.1
+                c-0.5-0.1-1,0.1-1.4,0.4c-0.3,0.4-0.4,0.9-0.4,1.4v0.2h4.8v-0.2c0.2-0.8-0.2-1.5-1-1.8c-0.2-0.1-0.5-0.1-0.8,0H86.3z"
+                />
+                <path
+                  d="M95.9,131.5c-1.3,0.2-2.6-0.7-2.8-2c0-0.3,0-0.5,0-0.8v-3.5h-0.8c-0.3,0-0.5-0.2-0.6-0.4v-0.1c0-0.3,0.1-0.5,0.4-0.6
+                c0.1,0,0.1,0,0.2,0h0.8v-1.3c0-0.3,0.2-0.6,0.5-0.6s0.6,0.2,0.6,0.5l0,0v1.3H96c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2
+                c0,0.3-0.1,0.5-0.4,0.6h-0.1h-1.8v3.5c-0.2,0.8,0.3,1.5,1,1.7c0.2,0.1,0.5,0.1,0.7,0c0.2,0,0.3,0,0.4,0.1s0.2,0.3,0.1,0.4
+                c0.1,0.3-0.1,0.5-0.4,0.6C96,131.5,96,131.5,95.9,131.5z"
+                />
+                <path
+                  d="M100.8,131.5c-1.4,0.2-2.7-0.7-2.9-2.1c0-0.3,0-0.5,0-0.8v-1.7c-0.1-0.8,0.2-1.6,0.7-2.2c0.6-0.5,1.4-0.8,2.2-0.7h1.2
+                c0.6,0,1.2,0.1,1.7,0.4c0.4,0.3,0.7,0.7,0.8,1.2c0.1,0.2,0,0.3-0.1,0.4s-0.3,0.2-0.4,0.2s-0.3,0-0.4-0.1s-0.2-0.2-0.2-0.4
+                c-0.1-0.2-0.2-0.3-0.4-0.4c-0.3-0.1-0.7-0.1-1-0.1h-1.2c-0.5-0.1-1,0.1-1.4,0.4c-0.3,0.4-0.4,0.9-0.4,1.4v1.7
+                c-0.1,0.5,0.1,1,0.4,1.4c0.4,0.3,0.9,0.4,1.4,0.4h1.2c0.3,0,0.7,0,1-0.1c0.2-0.1,0.4-0.2,0.4-0.4c0-0.1,0.1-0.3,0.2-0.4
+                c0.1-0.1,0.2-0.1,0.4-0.1c0.2,0,0.3,0,0.4,0.1s0.1,0.3,0.1,0.4c-0.1,0.5-0.4,0.9-0.8,1.2c-0.5,0.3-1.1,0.4-1.7,0.4L100.8,131.5
+                L100.8,131.5z M101.8,134.7c-0.7,0.1-1.3-0.4-1.4-1.1c0-0.1,0-0.2,0-0.3c0-0.3,0.2-0.5,0.5-0.5s0.5,0.2,0.5,0.5
+                c-0.1,0.2,0,0.4,0.2,0.5c0.1,0,0.2,0,0.2,0c0.3,0.1,0.7-0.1,0.8-0.4c0-0.1,0-0.2,0-0.4c0-0.1,0-0.1-0.1-0.2
+                c-0.1-0.1-0.2-0.2-0.3-0.2l-0.3-0.2c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.2-0.1-0.4-0.1-0.6c0-0.3,0.2-0.5,0.5-0.5s0.5,0.2,0.5,0.5
+                c0,0.1,0,0.2,0.1,0.2c0.1,0.1,0.2,0.2,0.3,0.3c0.2,0.1,0.3,0.3,0.5,0.4c0.2,0.2,0.3,0.5,0.3,0.8c0,0.5-0.1,0.9-0.4,1.3
+                C102.8,134.6,102.3,134.7,101.8,134.7L101.8,134.7z"
+                />
+                <path
+                  d="M107.5,122.7c-0.3,0-0.6-0.2-0.7-0.5c0-0.1,0-0.1,0-0.2v-0.4c0-0.3,0.2-0.6,0.5-0.7c0.1,0,0.1,0,0.2,0h0.4
+                c0.4,0,0.6,0.2,0.6,0.7v0.4c0,0.4-0.2,0.7-0.6,0.7H107.5z M107.7,131.5c-0.3,0-0.5-0.2-0.6-0.4V131v-6.4c0-0.3,0.2-0.5,0.4-0.6h0.1
+                c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v6.4c0,0.3-0.1,0.5-0.4,0.6C107.8,131.5,107.7,131.5,107.7,131.5z"
+                />
+                <path
+                  d="M116.5,131.5c-0.3,0-0.5-0.2-0.6-0.4V131v-5.8h-0.6c-0.3,0-0.5-0.2-0.6-0.4v-0.1c0-0.3,0.2-0.5,0.4-0.6h0.1h0.6v-0.3
+                c-0.1-0.8,0.2-1.6,0.7-2.2c0.6-0.5,1.4-0.7,2.2-0.7h2.3l-0.3,1.7l-2-0.6c-0.5,0-1,0.1-1.4,0.4c-0.3,0.4-0.4,0.9-0.4,1.4v0.2h4.2
+                c0.3,0,0.5,0.1,0.6,0.4v0.1c0,0.3-0.2,0.5-0.4,0.6h-0.1H117v5.8C117.1,131.2,116.9,131.4,116.5,131.5
+                C116.6,131.5,116.6,131.5,116.5,131.5z M121,122.6c-0.3,0-0.6-0.2-0.7-0.5c0-0.1,0-0.1,0-0.2v-0.4c0-0.4,0.2-0.7,0.7-0.7h0.4
+                c0.3,0,0.6,0.2,0.6,0.5c0,0.1,0,0.1,0,0.2v0.5c0,0.3-0.2,0.6-0.5,0.7h-0.1L121,122.6z M121.2,131.5c-0.3,0-0.5-0.2-0.6-0.4V131v-6.4
+                c0-0.3,0.2-0.5,0.4-0.6h0.1c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v6.4c0,0.3-0.1,0.5-0.4,0.6
+                C121.3,131.5,121.3,131.5,121.2,131.5z"
+                />
+                <path
+                  d="M126.7,134.5c-0.6,0-1.1-0.1-1.6-0.5c-0.4-0.4-0.6-1-0.5-1.6c0-0.3,0.1-0.5,0.4-0.6c0.1,0,0.1,0,0.2,0
+                c0.3,0,0.5,0.1,0.6,0.4v0.1c0,0.3,0,0.6,0.2,0.8s0.5,0.2,0.8,0.2h2.8c0.3,0,0.6,0,0.8-0.2s0.2-0.5,0.2-0.8v-2
+                c-0.3,0.4-0.6,0.7-1.1,0.9c-0.4,0.2-0.9,0.2-1.4,0.2h-0.6c-1.3,0.2-2.6-0.7-2.8-2c0-0.3,0-0.5,0-0.8v-4.1c0-0.3,0.1-0.5,0.4-0.6h0.1
+                c0.3,0,0.5,0.2,0.6,0.4v0.1v4.1c-0.2,0.7,0.3,1.5,1,1.7c0.2,0.1,0.5,0.1,0.7,0h0.6c0.7,0.1,1.3,0,1.9-0.4c0.4-0.3,0.6-0.8,0.6-1.3
+                v-4.1c0-0.3,0.2-0.6,0.6-0.6s0.6,0.2,0.6,0.6l0,0v7.8c0,0.6-0.1,1.2-0.5,1.6c-0.4,0.4-1,0.6-1.6,0.5L126.7,134.5z"
+                />
+                <path
+                  d="M137,131.5c-1.3,0.1-2.5-0.9-2.7-2.2s0.9-2.5,2.2-2.7c0.1,0,0.3,0,0.4,0h3.3c0-0.4-0.1-0.9-0.4-1.2
+                c-0.4-0.2-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4c-0.1,0.1-0.2,0.1-0.4,0.1
+                s-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.2c0.6-0.3,1.3-0.4,2-0.4h0.9c1.4-0.2,2.7,0.7,2.9,2.1
+                c0,0.3,0,0.5,0,0.8v4c0,0.3-0.2,0.6-0.5,0.6s-0.6-0.2-0.6-0.5v-0.1v-0.5c-0.6,0.7-1.5,1.1-2.4,1L137,131.5z M137,130.4h0.8
+                c0.4,0,0.8,0,1.1-0.1s0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8v-1.3H137c-0.4,0-0.7,0.1-1.1,0.3c-0.2,0.3-0.3,0.6-0.3,1
+                s0.1,0.7,0.3,1.1C136.2,130.3,136.6,130.4,137,130.4z"
+                />
+                <path
+                  d="M147.4,131.5c-1.3,0.2-2.6-0.7-2.8-2c0-0.3,0-0.5,0-0.8v-3.5h-0.8c-0.3,0-0.5-0.2-0.6-0.4v-0.1c0-0.3,0.2-0.5,0.4-0.6h0.1
+                h0.8v-1.3c0-0.3,0.2-0.6,0.5-0.6s0.6,0.2,0.6,0.5v0.1v1.3h1.8c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2c0,0.3-0.1,0.5-0.4,0.6h-0.1
+                h-1.8v3.5c-0.1,0.5,0.1,1,0.4,1.4c0.4,0.3,0.9,0.4,1.4,0.4c0.2,0,0.3,0,0.4,0.1c0.1,0.1,0.2,0.3,0.1,0.4c0.1,0.3-0.1,0.5-0.4,0.6
+                C147.5,131.5,147.4,131.5,147.4,131.5z"
+                />
+                <path
+                  d="M45.8,84.6V48l-3.9,4.8h-12l15-17.9h10v49.7C54.9,84.6,45.8,84.6,45.8,84.6z"
+                />
+                <path d="M61.3,84.6v-9.7L94,35.1l2.8-0.1v9.5L64.1,84.4L61.3,84.6z" />
+                <path
+                  d="M108.1,83.3c-1.4-0.9-2.6-2-3.4-3.4c-0.9-1.4-1.3-3.1-1.3-4.8v-3h9v2.6c0,0.5,0.4,0.8,0.8,0.8l0,0h29.4
+                c0.2,0,0.5-0.1,0.6-0.2c0.2-0.1,0.3-0.4,0.3-0.6v-9.9c0-0.2-0.1-0.4-0.3-0.6s-0.4-0.2-0.6-0.2h-30.7v-9h28.8c0.2,0,0.4-0.1,0.6-0.2
+                c0.2-0.2,0.2-0.4,0.2-0.6v-9.4c0-0.2-0.1-0.4-0.2-0.6c-0.2-0.2-0.4-0.3-0.6-0.3h-27.5c-0.2,0-0.4,0.1-0.6,0.3s-0.2,0.4-0.2,0.6V48
+                h-9v-3.5c0-1.7,0.4-3.4,1.3-4.8c0.9-1.4,2-2.6,3.4-3.4c1.5-0.9,3.1-1.3,4.8-1.3H141c1.7,0,3.4,0.4,4.8,1.3c1.4,0.8,2.6,2,3.4,3.4
+                c0.9,1.5,1.3,3.1,1.3,4.8v10.1c0,0.6,0,1.1-0.1,1.7c-0.1,0.6-0.2,1.1-0.4,1.6c0.8,0.9,1.5,1.9,1.9,3.1c0.4,1.1,0.7,2.3,0.7,3.5v10.6
+                c0,1.7-0.4,3.3-1.3,4.8c-0.9,1.4-2,2.6-3.4,3.4c-1.4,0.9-3.1,1.3-4.8,1.3H113C111.2,84.6,109.5,84.2,108.1,83.3z"
+                />
+                <rect x="5.1" y="3.3" class="st1" width="191.6" height="153.8" />
+                <polyline class="st2" points="9.6,3.3 5.1,3.3 5.1,7.9 " />
+                <polyline class="st2" points="192.1,3.3 196.7,3.3 196.7,7.9 " />
+                <polyline class="st2" points="9.6,157.1 5.1,157.1 5.1,152.5 " />
+                <polyline class="st2" points="192.1,157.1 196.7,157.1 196.7,152.5 " />
+                <line class="st3" x1="163.5" y1="110.8" x2="163.5" y2="123.1" />
+                <line class="st3" x1="157.3" y1="116.9" x2="169.6" y2="116.9" />
+              </svg>
+            </div>
+            <div data-aos="flip-up" data-aos-delay="400" class="col">
+              <svg
+                version="1.1"
+                id="Layer_2"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 200 171.9"
+                style="enable-background: new 0 0 200 171.9"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #e7e7e7;
+                    stroke: #000000;
+                    stroke-width: 0.3652;
+                    stroke-miterlimit: 10;
+                  }
+                  .st1 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 0.45;
+                    stroke-miterlimit: 10;
+                  }
+                  .st2 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 1.72;
+                    stroke-miterlimit: 10;
+                  }
+                  .st3 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 0.68;
+                    stroke-miterlimit: 10;
+                  }
+                </style>
+                <polyline class="st0" points="3.6,156 22.5,168.4 178.9,168.4 196.5,156 " />
+                <rect x="4" y="2.3" class="st1" width="192.1" height="153.8" />
+                <polyline class="st2" points="8.6,2.3 4,2.3 4,6.9 " />
+                <polyline class="st2" points="191.5,2.3 196.1,2.3 196.1,6.9 " />
+                <polyline class="st2" points="8.6,156.1 4,156.1 4,151.5 " />
+                <polyline class="st2" points="191.5,156.1 196.1,156.1 196.1,151.5 " />
+                <path
+                  d="M70.2,120.4c-1.2,0.2-2.3-0.6-2.4-1.8c0-0.2,0-0.4,0-0.6c-0.2-1.2,0.6-2.3,1.8-2.4c0.2,0,0.4,0,0.6,0h3.3
+                c0-0.4-0.1-0.9-0.4-1.2c-0.4-0.3-0.9-0.4-1.3-0.3h-0.9c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4
+                s-0.2,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9
+                c1.4-0.2,2.7,0.7,2.9,2.1c0,0.3,0,0.6,0,0.8v4c0,0.3-0.2,0.6-0.5,0.6s-0.6-0.2-0.6-0.5v-0.1v-0.5c-0.6,0.7-1.5,1.1-2.4,1L70.2,120.4
+                z M70.2,119.3H71c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8v-1.3h-3.3c-0.6-0.2-1.2,0.2-1.3,0.7
+                c-0.1,0.2-0.1,0.4,0,0.6c0,0.4,0.1,0.7,0.3,1C69.5,119.2,69.8,119.3,70.2,119.3z"
+                />
+                <path
+                  d="M79.4,123.4c-0.6,0-1.1-0.1-1.6-0.5c-0.4-0.4-0.6-1-0.5-1.6c0-0.3,0.3-0.5,0.6-0.5c0.3,0,0.4,0.2,0.5,0.5
+                c0,0.3,0,0.6,0.2,0.8c0.2,0.2,0.5,0.2,0.8,0.2h2.8c0.3,0,0.6,0,0.8-0.2c0.2-0.2,0.2-0.5,0.2-0.8v-2c-0.2,0.4-0.6,0.7-1.1,0.9
+                c-0.4,0.1-0.9,0.2-1.4,0.2h-0.6c-1.3,0.2-2.6-0.7-2.8-2c0-0.3,0-0.5,0-0.8v-4.1c0-0.3,0.2-0.6,0.5-0.6s0.6,0.2,0.6,0.5v0.1v4.1
+                c-0.1,0.5,0.1,1,0.4,1.3c0.4,0.3,0.9,0.4,1.3,0.4h0.6c0.6,0,1.3-0.1,1.8-0.4c0.4-0.3,0.6-0.8,0.6-1.3v-4.1c0-0.3,0.2-0.6,0.5-0.6
+                s0.6,0.2,0.6,0.5v0.1v7.8c0,0.6-0.1,1.2-0.5,1.6s-1,0.6-1.6,0.5H79.4z"
+                />
+                <path
+                  d="M90,120.4c-1.4,0.2-2.7-0.7-2.9-2.1c0-0.3,0-0.5,0-0.8v-1.7c-0.1-0.8,0.2-1.6,0.7-2.2c0.6-0.5,1.4-0.8,2.2-0.7h3v-2.5
+                c0-0.3,0.3-0.5,0.6-0.5c0.3,0,0.4,0.2,0.5,0.5v9.5c0,0.3-0.2,0.6-0.5,0.6S93,120.3,93,120v-0.1v-0.3c-0.2,0.3-0.6,0.5-0.9,0.6
+                c-0.5,0.2-1,0.2-1.5,0.2H90z M90,119.3h0.6c0.6,0,1.2-0.1,1.7-0.3c0.4-0.1,0.7-0.5,0.7-0.9V114h-3c-0.8-0.2-1.6,0.3-1.8,1
+                c-0.1,0.2-0.1,0.5,0,0.7v1.7c-0.1,0.5,0.1,1,0.4,1.4C89,119.2,89.5,119.3,90,119.3z"
+                />
+                <path
+                  d="M99.2,120.4c-0.7,0.1-1.3-0.2-1.8-0.6c-1-0.9-1.1-2.4-0.2-3.4c0.5-0.6,1.3-0.9,2.1-0.8h3.3c0-0.4-0.1-0.9-0.4-1.2
+                c-0.4-0.3-0.9-0.4-1.3-0.3H100c-0.4,0-0.8,0-1.2,0.1c-0.2,0.1-0.4,0.2-0.5,0.5c0,0.1-0.1,0.3-0.2,0.4s-0.2,0.1-0.4,0.1
+                c-0.2,0-0.3,0-0.4-0.2c-0.1-0.1-0.1-0.3-0.1-0.4c0.1-0.5,0.4-1,0.9-1.3c0.6-0.3,1.3-0.4,2-0.4h0.9c1.4-0.2,2.7,0.7,2.9,2.1
+                c0,0.3,0,0.6,0,0.8v4c0,0.3-0.2,0.6-0.5,0.6s-0.6-0.2-0.6-0.5v-0.1v-0.5c-0.6,0.7-1.5,1.1-2.4,1L99.2,120.4z M99.2,119.3h0.8
+                c0.4,0,0.8,0,1.1-0.1c0.3-0.1,0.6-0.2,0.9-0.4c0.2-0.2,0.4-0.5,0.4-0.8v-1.3h-3.3c-0.4,0-0.7,0.1-1,0.3c-0.2,0.3-0.3,0.7-0.3,1.1
+                c-0.2,0.6,0.2,1.2,0.7,1.3C98.9,119.3,99.1,119.3,99.2,119.3L99.2,119.3z"
+                />
+                <path
+                  d="M117.5,120.4c-0.1,0.1-0.3,0.1-0.4,0.1s-0.3-0.1-0.3-0.3l-2.4-3.9H112v3.5c0,0.3-0.2,0.6-0.5,0.6s-0.6-0.2-0.6-0.5v-0.1v-9
+                c0-0.3,0.1-0.5,0.4-0.6c0.1,0,0.1,0,0.2,0h3.6c1.4-0.2,2.6,0.8,2.8,2.2c0,0.2,0,0.4,0,0.6v0.4c0,0.7-0.2,1.3-0.6,1.9
+                c-0.4,0.5-1,0.8-1.6,0.9l2.1,3.4c0.2,0.2,0.2,0.5,0,0.7C117.6,120.3,117.6,120.4,117.5,120.4z M112,115.2h3c0.5,0,0.9-0.1,1.3-0.4
+                c0.3-0.4,0.4-0.8,0.4-1.3v-0.4c0-0.5-0.1-0.9-0.4-1.3c-0.4-0.3-0.8-0.4-1.3-0.4h-3V115.2z"
+                />
+                <path
+                  d="M123.2,120.4c-1.6,0.3-3-0.8-3.3-2.4c0-0.3,0-0.6,0-0.9v-3.5c-0.1-0.9,0.2-1.8,0.8-2.5c0.7-0.6,1.6-0.9,2.5-0.8h1.8
+                c1.6-0.3,3,0.8,3.3,2.4c0.1,0.3,0,0.6,0,0.9v3.4c0.3,1.6-0.8,3.1-2.4,3.3c-0.3,0-0.6,0.1-0.9,0L123.2,120.4z M123.2,119.3h1.8
+                c0.4,0,0.9-0.1,1.3-0.2c0.3-0.1,0.6-0.4,0.7-0.7c0.1-0.4,0.2-0.9,0.2-1.3v-3.5c0-0.4-0.1-0.9-0.2-1.3c-0.1-0.3-0.4-0.6-0.7-0.7
+                c-0.4-0.2-0.9-0.2-1.3-0.2h-1.8c-0.4,0-0.9,0-1.3,0.2c-0.3,0.1-0.6,0.4-0.7,0.7c-0.2,0.4-0.2,0.9-0.2,1.3v3.5c0,0.4,0.1,0.9,0.2,1.3
+                c0.1,0.3,0.4,0.6,0.7,0.7C122.3,119.2,122.7,119.3,123.2,119.3z"
+                />
+                <path
+                  d="M131.6,120.4c-0.1,0-0.3,0-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.4V111c0-0.2,0-0.3,0.1-0.4s0.3-0.2,0.4-0.1
+                c0.3,0,0.5,0.1,0.6,0.4c0,0.1,0,0.1,0,0.2v8.9c0,0.3-0.1,0.5-0.4,0.6C131.7,120.4,131.6,120.4,131.6,120.4z"
+                />
+                <path d="M34.4,85.7V59.1l-2.9,3.5h-8.6l10.8-13H41v36L34.4,85.7L34.4,85.7z" />
+                <path
+                  d="M48.3,85.7V71.9c0-1.2,0.3-2.4,1-3.5c0.6-1,1.5-1.9,2.5-2.5S54,65,55.3,65h21.6c0.2,0,0.3-0.1,0.4-0.2s0.2-0.3,0.2-0.4v-7.6
+                c0-0.2-0.1-0.3-0.2-0.4c-0.1-0.1-0.3-0.2-0.4-0.2H55.4c-0.2,0-0.3,0.1-0.4,0.2c-0.1,0.1-0.2,0.3-0.2,0.4v2.5h-6.6v-2.7
+                c0-1.2,0.3-2.4,1-3.5c0.6-1,1.5-1.9,2.5-2.5s2.2-0.9,3.5-0.9H77c1.2,0,2.4,0.3,3.5,0.9c1,0.6,1.9,1.4,2.5,2.5s0.9,2.3,0.9,3.5v8.1
+                c0,1.2-0.3,2.4-0.9,3.4s-1.5,1.9-2.5,2.5s-2.2,1-3.5,0.9H55.4c-0.2,0-0.3,0.1-0.4,0.2c-0.1,0.1-0.2,0.3-0.2,0.4v6.3
+                c0,0.3,0.2,0.6,0.6,0.6l0,0h28.5v6.6L48.3,85.7z"
+                />
+                <path d="M90.9,74.2v-6.5h20.5v6.6L90.9,74.2z" />
+                <path d="M124.3,85.7V59.1l-2.8,3.5h-8.7l10.8-13h7.2v36L124.3,85.7L124.3,85.7z" />
+                <path
+                  d="M141.6,84.7c-1-0.6-1.9-1.5-2.5-2.5s-1-2.2-0.9-3.4v-7.9c0-0.6,0.1-1.2,0.3-1.8c0.2-0.6,0.4-1.2,0.8-1.8
+                c-0.3-0.6-0.6-1.2-0.8-1.8c-0.2-0.6-0.3-1.2-0.3-1.9v-7.1c0-1.2,0.3-2.4,0.9-3.5c0.6-1,1.5-1.9,2.5-2.5s2.2-0.9,3.4-0.9h21.9
+                c1.1,0,2.1,0.3,3.1,0.8s1.8,1.2,2.5,2s1.1,1.8,1.3,2.8v8.4c0,1.3-0.4,2.5-1.1,3.7c0.7,1.1,1.1,2.3,1.1,3.6v7.8c0,1.2-0.3,2.4-1,3.4
+                c-0.6,1-1.5,1.9-2.5,2.5s-2.2,1-3.4,1h-21.8C143.9,85.7,142.7,85.4,141.6,84.7z M145.3,64.6h21.4c0.2,0,0.3-0.1,0.4-0.2
+                c0.1-0.1,0.2-0.2,0.2-0.4v-7.1c0-0.2-0.1-0.3-0.2-0.4c-0.1-0.1-0.3-0.2-0.4-0.2h-21.4c-0.2,0-0.3,0.1-0.4,0.2
+                c-0.1,0.1-0.2,0.3-0.2,0.4V64c0,0.2,0.1,0.3,0.2,0.4S145.2,64.6,145.3,64.6z M145.3,79.1h21.4c0.2,0,0.3-0.1,0.4-0.2
+                c0.1-0.1,0.2-0.3,0.2-0.4v-7.3c0-0.2-0.1-0.3-0.2-0.4c-0.1-0.1-0.3-0.2-0.4-0.2h-21.4c-0.2,0-0.3,0.1-0.4,0.2
+                c-0.1,0.1-0.2,0.3-0.2,0.4v7.3c0,0.2,0.1,0.3,0.2,0.4C145,79.1,145.2,79.1,145.3,79.1z"
+                />
+                <line class="st3" x1="38.8" y1="109.8" x2="38.8" y2="122.1" />
+                <line class="st3" x1="32.6" y1="116" x2="44.9" y2="116" />
+                <line class="st3" x1="163.3" y1="109.8" x2="163.3" y2="122.1" />
+                <line class="st3" x1="157.1" y1="116" x2="169.4" y2="116" />
+              </svg>
+            </div>
+          </div>
+          <div class="line-area">
+            <img class="desktop-img" src="img/line.png" alt="" />
+            <img class="mobile-img" src="img/mobile-line.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="fourth-section">
+        <div class="container-sm">
+          <div class="homepage-product-wrapper">
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="text-area">
+                <div class="title">
+                  <h5>TANIŞTIRALIM!</h5>
+                  <h3>AdvoBot</h3>
+                </div>
+                <p>e-ticaret ve lojistikte verimli toplama ve taşıma robotunuz</p>
+              </div>
+              <div class="video-area">
+                <video
+                  playsinline=""
+                  autoplay=""
+                  muted=""
+                  loop=""
+                  preload="auto"
+                  id="myVideo"
+                  class="product-img img-fluid"
+                >
+                  <source src="img/orca.mp4" type="video/mp4" />
+                  Your browser does not support HTML5 video.
+                </video>
+                <div class="btn-wrapper">
+                  <a href="#"> İncele</a>
+                  <svg
+                    class="btn-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="96.668"
+                    height="38.834"
+                    viewBox="0 0 96.668 38.834"
+                  >
+                    <path
+                      id="Path_526"
+                      data-name="Path 526"
+                      d="M857.883,471.21l-7.56,7.56H762.249v-37.8h95.634Z"
+                      transform="translate(-761.732 -440.453)"
+                      fill="transparent"
+                      stroke="#fff"
+                      stroke-miterlimit="10"
+                      stroke-width="1.034"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="second-video">
+                  <video
+                    playsinline=""
+                    autoplay=""
+                    muted=""
+                    loop=""
+                    preload="auto"
+                    id="myVideo"
+                    class="product-img img-fluid"
+                  >
+                    <source src="img/orca_1.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="text-area">
+                <div class="title">
+                  <h5>RAFLARI YANINIZDA BİLİN</h5>
+                  <h3>Eldor</h3>
+                </div>
+                <p>Lojistik, otomotiv vb. gibi raflı ekosistemlerde titiz ve güçlü çözüm.</p>
+              </div>
+              <div class="video-area">
+                <video
+                  playsinline=""
+                  autoplay=""
+                  muted=""
+                  loop=""
+                  preload="auto"
+                  id="myVideo"
+                  class="product-img img-fluid"
+                >
+                  <source src="img/Eldor.mp4" type="video/mp4" />
+                  Your browser does not support HTML5 video.
+                </video>
+                <div class="btn-wrapper">
+                  <a href="#"> İncele</a>
+                  <svg
+                    class="btn-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="96.668"
+                    height="38.834"
+                    viewBox="0 0 96.668 38.834"
+                  >
+                    <path
+                      id="Path_526"
+                      data-name="Path 526"
+                      d="M857.883,471.21l-7.56,7.56H762.249v-37.8h95.634Z"
+                      transform="translate(-761.732 -440.453)"
+                      fill="transparent"
+                      stroke="#fff"
+                      stroke-miterlimit="10"
+                      stroke-width="1.034"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="second-video">
+                  <video
+                    playsinline=""
+                    autoplay=""
+                    muted=""
+                    loop=""
+                    preload="auto"
+                    id="myVideo"
+                    class="product-img img-fluid"
+                  >
+                    <source src="img/Eldor_1.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="text-area">
+                <div class="title">
+                  <h5>PALET GETİREN ROBOT!</h5>
+                  <h3>Transpalet</h3>
+                </div>
+                <p>
+                  Paletli taşıma ekosistemlerinde palet altına girerek hareket kabiliyetinizi
+                  artırır!
+                </p>
+              </div>
+              <div class="video-area">
+                <video
+                  playsinline=""
+                  autoplay=""
+                  muted=""
+                  loop=""
+                  preload="auto"
+                  id="myVideo"
+                  class="product-img img-fluid"
+                >
+                  <source src="img/transpalet.mp4" type="video/mp4" />
+                  Your browser does not support HTML5 video.
+                </video>
+                <div class="btn-wrapper">
+                  <a href="https://smolcss.dev/"> İncele</a>
+                  <svg
+                    class="btn-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="96.668"
+                    height="38.834"
+                    viewBox="0 0 96.668 38.834"
+                  >
+                    <path
+                      id="Path_526"
+                      data-name="Path 526"
+                      d="M857.883,471.21l-7.56,7.56H762.249v-37.8h95.634Z"
+                      transform="translate(-761.732 -440.453)"
+                      fill="transparent"
+                      stroke="#fff"
+                      stroke-miterlimit="10"
+                      stroke-width="1.034"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="second-video">
+                  <video
+                    playsinline=""
+                    autoplay=""
+                    muted=""
+                    loop=""
+                    preload="auto"
+                    id="myVideo"
+                    class="product-img img-fluid"
+                  >
+                    <source src="img/transpalet_1.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line-area">
+            <img class="desktop-img" src="img/line.png" alt="" />
+            <img class="mobile-img" src="img/mobile-line.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="fifth-section">
+        <div class="container-sm">
+          <div class="homepage-contact-wrapper">
+            <div class="img-area">
+              <img src="img/contact-guy.png" alt="" />
+            </div>
+            <div class="text-area">
+              <h3>ADVOARD Otonom robotları ücretsiz deneyimleyin!</h3>
+              <p>
+                Bize ulaşın, robotlarımızın personelinizle yapacağı iş birliği ve 3 kat verimlilik
+                artışı hakkında sizi bir demo seansla bilgilendirelim.
+              </p>
+            </div>
+            <div class="contact-area">
+              <form class="needs-validation" novalidate action="">
+                <label for="validationCustom01">İsim</label>
+                <input
+                  type="text"
+                  class="form-control my-2"
+                  id="validationCustom01"
+                  placeholder="John Doe"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+
+                <label for="validationCustom01">Şirket Adı</label>
+                <input
+                  type="text"
+                  class="form-control my-2"
+                  id="validationCustom01"
+                  placeholder="Doe Logistics"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+
+                <label for="validationCustom01">Görev</label>
+                <input
+                  type="text"
+                  class="form-control my-2"
+                  id="validationCustom01"
+                  placeholder="General Manager"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+
+                <label for="validationCustom01">e-mail</label>
+                <input
+                  type="text"
+                  class="form-control my-2"
+                  id="validationCustom01"
+                  placeholder="johndoe@doelogistics.com"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+
+                <div class="btn-wrapper">
+                  <a href="#"> Gönder</a>
+                  <svg
+                    class="btn-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="96.668"
+                    height="38.834"
+                    viewBox="0 0 96.668 38.834"
+                  >
+                    <path
+                      id="Path_526"
+                      data-name="Path 526"
+                      d="M857.883,471.21l-7.56,7.56H762.249v-37.8h95.634Z"
+                      transform="translate(-761.732 -440.453)"
+                      fill="transparent"
+                      stroke="#fff"
+                      stroke-miterlimit="10"
+                      stroke-width="1.034"
+                    ></path>
+                  </svg>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-list">
+        <div class="list">
+          <h3>Şirket</h3>
+          <ul>
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Basında Biz</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>Ürünlerimiz</h3>
+          <ul>
+            <li><a href="#">AdvoBot</a></li>
+            <li><a href="#">Eldor</a></li>
+            <li><a href="#">Transpalet</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h3>İLETİŞİM</h3>
+          <p>10032 Sok. No: 2/A İTOB Organize Sanayi Bölgesi Tekeli, Menderes/İzmir</p>
+          <a class="contact-mail" href="mailto:info@advoard.com">info@advoard.com</a>
+        </div>
+        <div class="list">
+          <div class="icon-wrapper">
+            <a target="_blank" href="https://www.instagram.com/remotify.co/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a target="_blank" href="https://www.linkedin.com/company/remotify-co"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a target="_blank" href="https://twitter.com/remotifyco"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+
+            <a target="_blank" href="https://www.linkedin.com/company/remotify-co"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a target="_blank" href="https://www.linkedin.com/company/remotify-co"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2021 All rights reserved.</p>
+        <div class="line-area">
+          <img class="desktop-img" src="img/dash-line-footer.png" alt="" />
+          <img class="mobile-img" src="img/dash-line-footer-mobile.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <svg
+      class="scrollToTopBtn"
+      xmlns="http://www.w3.org/2000/svg"
+      width="34.364"
+      height="26.331"
+      viewBox="0 0 34.364 26.331"
+    >
+      <g id="Group_60" data-name="Group 60" transform="translate(-1076.981 -2651.044)">
+        <g id="Group_59" data-name="Group 59">
+          <path
+            id="Path_183"
+            data-name="Path 183"
+            d="M1082.115,2652.161H1078.1v10.04"
+            fill="none"
+            stroke="#000"
+            stroke-miterlimit="10"
+            stroke-width="2.234"
+          />
+          <path
+            id="Path_184"
+            data-name="Path 184"
+            d="M1106.212,2652.161h4.016v10.04"
+            fill="none"
+            stroke="#000"
+            stroke-miterlimit="10"
+            stroke-width="2.234"
+          />
+          <path
+            id="Path_185"
+            data-name="Path 185"
+            d="M1082.115,2676.258H1078.1v-10.041"
+            fill="none"
+            stroke="#000"
+            stroke-miterlimit="10"
+            stroke-width="2.234"
+          />
+          <path
+            id="Path_186"
+            data-name="Path 186"
+            d="M1106.212,2676.258h4.016v-10.041"
+            fill="none"
+            stroke="#000"
+            stroke-miterlimit="10"
+            stroke-width="2.234"
+          />
+        </g>
+        <path
+          id="Path_187"
+          data-name="Path 187"
+          d="M1087.354,2666.479l2.27,2.27,4.539-4.539,4.539,4.539,2.27-2.27-6.809-6.809Z"
+          fill="none"
+          stroke="#000"
+          stroke-miterlimit="10"
+          stroke-width="1.117"
+        />
+      </g>
+    </svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
