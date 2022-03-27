@@ -83,12 +83,14 @@
   $(document).ready(function () {
     $("#burger").click(function () {
       document.getElementById("mySidenav").style.width = "200px";
+      $(".overlay").addClass("active");
     });
   });
 
   $(document).ready(function () {
     $("#close").click(function () {
       document.getElementById("mySidenav").style.width = "0";
+      $(".overlay").removeClass("active");
     });
   });
 
